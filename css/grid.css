@@ -1,0 +1,33 @@
+/* constucting grid layout */
+.mainDiv {
+    height: 100vh;
+    width: inherit;
+    max-width: inherit;
+    min-width: inherit;
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-auto-rows: minmax(0, auto); */
+    /* grid-auto-rows: min-content; */
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+        "h h h h h"
+        "m m m m m"
+        "c c c c c"
+        "f f f f f";
+}
+header {
+    grid-area: h;
+} 
+nav {
+    grid-area: m;
+    /* height: fit-content; */
+}
+main {
+    grid-area: c;
+    padding-top: 1rem;
+    /* height: auto; */
+}
+footer {
+    grid-area: f;
+    /* height: fit-content; */
+}

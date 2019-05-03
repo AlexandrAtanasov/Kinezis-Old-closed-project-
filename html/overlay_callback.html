@@ -1,0 +1,30 @@
+<!-- start callback ovarlay window -->
+<div class="overlay__content_container overlay__hide">
+
+    <div class="overlay__content_buttonBox decoration__select_none">
+        <div class="overlay__content_buttonClose">
+            <i class="fas fa-times"></i>
+            <span class="overlay__content_button_text">Закрыть</span>
+        </div>
+    </div>
+
+    <div class="overlay__content_callbackForm">
+        <div class="overlay__content_form">
+            <form method='post' target="blank" action='' class="overlay__content_form_elem">
+                <!-- <fieldset> -->
+                    <legend class="overlay__content_form_title decoration__select_none">Оставьте свои данные и мы Вам перезвоним!<legend><br>
+                    <!-- <span class="overlay__content_form_text">Как Ваше имя?<span><br> -->
+                    <input type='text' name='name' placeholder='Ваше имя' class="form__input_field_name"><br>
+                    <!-- <span class="overlay__content_form_text">На какой номер Вам перезвонить?</span><br> -->
+
+                    <!-- TODO: добавить регулярные выражения для проверки -->
+                    
+                    <input type='tel' name='number' placeholder='Ваш номер телефона' class="form__input_field_number"><br>
+                    <input type='submit' value='Перезвоните мне!' class="form__input_submit"><br>
+                <!-- </fieldset> -->
+            </form>
+        </div>
+
+    </div>
+
+</div>

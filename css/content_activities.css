@@ -1,0 +1,48 @@
+/* styles for activities */
+.content__activities{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background: rgba(142, 178, 81, 0.72); */
+}
+.content__activities_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 0 0 0;
+}
+.content__activities_elem {
+    display: flex;
+    flex-direction: column;
+    background: #717171;
+    margin: 0 0.5rem 1rem 0.5rem;
+    align-items: center;
+    height: 15rem;
+    min-width: 15rem;
+    /* for big screen */
+    width: 20%;
+    /* for mobile screen */
+    /* max-width: min-content; */
+}
+.content__activities_img img {
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 9rem;
+    height: 9rem;
+    background: white;
+    margin: 1rem 1rem 0 1rem;
+}
+.content__activities_info {
+    display: block;
+    margin: 0.5rem;
+    width: 90%;
+    text-align: center;
+    color: #fff;
+}
+/* .content__activities_info p {
+    display: block;
+    letter-spacing: 0.05rem;
+    font-size: 1.1rem;
+} */

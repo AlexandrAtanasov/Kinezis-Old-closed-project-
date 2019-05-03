@@ -1,0 +1,71 @@
+/* styles for prices table */
+.content__price_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0 0 0;
+}
+.content__price_services,
+.content__price_abonement,
+.content__price_support,
+.content__price_sale {
+    display: flex;
+    flex-direction: column;
+    background: #717171;
+    margin: 0 0.5rem 1rem 0.5rem;
+    width: 80%;
+    min-width: 15rem;
+    align-items: center;
+    padding: 1rem;
+    text-align: justify;
+}
+.content__price_servicesTable,
+.content__price_abonementTable,
+.content__price_supportTable,
+.content__price_saleTable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 1rem; 
+    margin-bottom: 1rem; 
+}
+.content__price_box table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px #C1DA95;
+    text-align: center;
+}
+.content__price_servicesTable table,
+.content__price_abonementTable table,
+.content__price_supportTable table,
+.content__price_saleTable table {
+    max-width: max-content;
+}
+.content__price_servicesTable table th:first-child, 
+.content__price_servicesTable table td:first-child,
+.content__price_abonementTable table th:first-child,
+.content__price_abonementTable table td:first-child,
+.content__price_supportTable table th:first-child, 
+.content__price_supportTable table td:first-child,
+.content__price_saleTable table th:first-child,
+.content__price_saleTable table td:first-child {
+    text-align: left;
+}
+.content__price_box th {
+    padding: 10px 8px;
+}
+
+.content__price_box td {
+    border-top: 2px solid #C1DA95;
+    padding: 0.5rem;
+}
+/* .content__price_saleTable th:first-child,
+.content__price_saleTable td:first-child {
+    width: 8rem;
+    min-width: min-content;
+    padding: 10px 8px; 
+}*/
+.content__prices_info {
+    margin-top: 1rem;
+}

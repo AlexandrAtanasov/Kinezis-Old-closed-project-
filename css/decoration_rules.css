@@ -1,0 +1,95 @@
+/* general decoration rules */
+
+/* do not decorate a links */
+.decoration__link,
+a
+{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+/* do not select text by user */
+.decoration__select_none
+{
+    user-select: none;
+}
+/* do not style lists */
+.decoration__list_none
+{
+    list-style: none;
+}
+/* empty styles for paragraph and lists */
+ul,
+p
+{
+    margin: 0;
+    padding: 0;
+}
+/* styles for headlines content */
+.headline,
+.headline>* 
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #53741A;
+}
+/* styles for content box text and headlines */
+.content__person_info p,
+.content__article_article,
+.content__prices_info,
+.content__price_supportTable,
+.content__price_abonementTable,
+.content__price_servicesTable,
+.content__price_saleTable,
+.content__contacts_info div 
+{
+    display: block;
+    color: white;
+}
+.content__person_fio,
+.content__article_title,
+.content__article_subtitle,
+.content__article_subtitle h2,
+.content__prices_title,
+.content__contacts_title,
+.footer__attention,
+.overlay__content_buttonClose,
+.overlay__menu_buttonClose,
+.overlay__content_form_title,
+.form__input_submit
+{
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: white;
+}
+.content__article_title h1 
+{
+    font-size: 1.5rem;
+}
+/* text style for button and navigation */
+.header__callback_button_text,
+.header__menu_button_text,
+.nav__menu_list>li,
+.nav__menu_list>li>a,
+.overlay__content_form_text,
+.footer__info_title {
+    display: inline;
+    /* margin-left: 0.1rem; */
+    position: relative;
+    align-content: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: white;
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+}
+.overlay__content_form_text {
+    text-transform: none;
+    font-weight: 400;
+}
