@@ -31,7 +31,7 @@ $(document).ready(function() {
         } else if($(this).hasClass('nav__menu_priceSale'))
         {
             $elemClass = '.content__price_sale';
-            $elemUrl = '../php/price/content_price_sale.php';
+            $elemUrl = '/sales';
             showContent();
         }
     });
@@ -50,7 +50,6 @@ function showContent() {
             }, 1000);
     } else {
         $("html, body").stop().animate({scrollTop:0}, 1000);
-            // $("main").html(''); 
             location.href = $elemUrl;
     }
 }

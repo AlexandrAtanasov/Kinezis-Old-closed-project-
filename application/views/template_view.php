@@ -47,11 +47,11 @@
 	?>
 
 	<?php
-		    include(__DIR__ . '/../../html/main__content_stop.html');
-			include(__DIR__ . '/../../html/footer.html');
-			include(__DIR__ . '/../../html/overlay_callback.html');
-			include(__DIR__ . '/../../html/overlay_menu.html');
-			// include('./html/end.html');
+        include(__DIR__ . '/../../html/main__content_stop.html');
+        include(__DIR__ . '/../../html/footer.html');
+        include(__DIR__ . '/../../html/overlay_callback.html');
+        include(__DIR__ . '/../../html/overlay_menu.html');
+        // include('./html/end.html');
 	?>
 
 
