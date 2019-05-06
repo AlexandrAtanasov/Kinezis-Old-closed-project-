@@ -9,7 +9,7 @@ $(document).ready(function() {
         } else if ($(this).hasClass('nav__menu_person'))
         {
             $elemClass = '.content__person';
-            $elemUrl = '/person';
+            $elemUrl = '/persons';
             showContent();
         } else if ($(this).hasClass('nav__menu_method'))
         {
@@ -38,21 +38,21 @@ $(document).ready(function() {
 })
 
 function showContent() {
-    $winWidth = $(document).width();
-    $heightBox = 0;
-    // ($winWidth >= 1131) ? ($heightBox = 50) : 
-    ($winWidth < 910) ? ($heightBox = 75) :
-    ($winWidth >= 910 && $winWidth < 1131) ? ($heightBox = 170) :
-    ($heightBox = 50);
-    if ($("div").is($elemClass)) {
-            $([document.documentElement, document.body]).animate({
-                scrollTop: $($elemClass).offset().top-$heightBox
-            }, 1000);
-    } else {
+    // $winWidth = $(document).width();
+    // $heightBox = 0;
+    // // ($winWidth >= 1131) ? ($heightBox = 50) : 
+    // ($winWidth < 910) ? ($heightBox = 75) :
+    // ($winWidth >= 910 && $winWidth < 1131) ? ($heightBox = 170) :
+    // ($heightBox = 50);
+    // if ($("div").is($elemClass)) {
+    //         $([document.documentElement, document.body]).animate({
+    //             scrollTop: $($elemClass).offset().top-$heightBox
+    //         }, 1000);
+    // } else {
         $("html, body").stop().animate({scrollTop:0}, 1000);
             location.href = $elemUrl;
     }
-}
+// }
 
 
 ///

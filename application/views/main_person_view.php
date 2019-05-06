@@ -1,11 +1,13 @@
+<!-- view for persons for a main page -->
 <div class="content__person decoration__select_none">
     <div class="headline decoration__select_none">
         <span>Наша комманда</span>
     </div>
     <div class="content__person_box">
         <?php
-
-            foreach(  $data as $row )
+            require_once(__DIR__ . '/../models/main_page_person.php');
+            // foreach(  $data as $row )
+            foreach(  $result as $row )
             {
                echo 
                     '<div class="content__person_elem">
