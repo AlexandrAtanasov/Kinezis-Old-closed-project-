@@ -12,7 +12,7 @@
             $action_name = 'index';
 
             $routes = explode( '/', $_SERVER['REQUEST_URI'] );
-
+            
             // get controller's name
             if ( !empty($routes[1]) )
             {
@@ -63,7 +63,7 @@
             }
         }
 
-        function ErrorPage404()
+        static function ErrorPage404()
         {
             $host = 'http://'.$_SERVER['HTTP_HOST'] . '/';
             header('HTTP/1.1 404 Not Found');

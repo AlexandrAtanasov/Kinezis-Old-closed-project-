@@ -16,22 +16,23 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link rel="icon" type="image/png" href="../images/logo/favicon.png">
 
-    <link rel="stylesheet" href="../css/grid.css">
-    <link rel="stylesheet" href="../css/main_style.css">
-    <link rel="stylesheet" href="../css/decoration_rules.css">
-    <link rel="stylesheet" href="../css/fontawesome/css/all.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/navigation.css">
-    <link rel="stylesheet" href="../css/content_activities.css">
-    <link rel="stylesheet" href="../css/content_person.css">
-    <link rel="stylesheet" href="../css/content_article.css">
-    <link rel="stylesheet" href="../css/content_contacts.css">
-    <link rel="stylesheet" href="../css/content_prices.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/overlay.css">
-    <link rel="stylesheet" href="../css/scrollingElements.css">
-    <link rel="stylesheet" href="../css/media_query.css">
+    <link rel="stylesheet" href="/../../css/grid.css">
+    <link rel="stylesheet" href="/../../css/main_style.css">
+    <link rel="stylesheet" href="/../../css/decoration_rules.css">
+    <link rel="stylesheet" href="/../../css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/../../css/header.css">
+    <link rel="stylesheet" href="/../../css/navigation.css">
+    <link rel="stylesheet" href="/../../css/content_activities.css">
+    <link rel="stylesheet" href="/../../css/content_person.css">
+    <link rel="stylesheet" href="/../../css/content_article.css">
+    <link rel="stylesheet" href="/../../css/content_contacts.css">
+    <link rel="stylesheet" href="/../../css/content_prices.css">
+    <link rel="stylesheet" href="/../../css/footer.css">
+    <link rel="stylesheet" href="/../../css/overlay.css">
+    <link rel="stylesheet" href="/../../css/scrollingElements.css">
+    <link rel="stylesheet" href="/../../css/media_query.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<title>Главная</title>
 </head>
 <body>
@@ -55,7 +56,7 @@
 	?>
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="../../js/menu.js"></script>
     <script src="../../js/scroll_window.js"></script>
     <script src="../../js/scrollTo.js"></script>

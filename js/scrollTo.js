@@ -1,12 +1,7 @@
 $(document).ready(function() {
     
     $(this).on("click", "span", function (event) {
-        if ($(this).hasClass('nav__menu_activities')) 
-        {
-            $elemClass = '.content__activities';
-            $elemUrl = '../html/main__content_activities.html';
-            showContent();
-        } else if ($(this).hasClass('nav__menu_person'))
+        if ($(this).hasClass('nav__menu_person'))
         {
             $elemClass = '.content__person';
             $elemUrl = '/persons';
@@ -33,10 +28,22 @@ $(document).ready(function() {
             $elemClass = '.content__price_sale';
             $elemUrl = '/sales';
             showContent();
+        } else if($(this).hasClass('nav__menu_problems'))
+        {
+            // $elemClass = '.content__price_sale';
+            $id = $(this).attr('id');
+            $elemUrl = '/resolvable/problem/' + $id;
+            showContent();
         }
     });
 })
 
+
+// function getId() {
+//     $elemId = $(this).attr('id');
+//     return $elemId;
+// }
+// off autoamic scrolling to element on page 
 function showContent() {
     // $winWidth = $(document).width();
     // $heightBox = 0;
