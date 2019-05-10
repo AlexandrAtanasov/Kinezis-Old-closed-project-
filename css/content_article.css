@@ -38,3 +38,12 @@
     /* width: 100%; */
     height: 100%;
 }
+.content__article ul {
+    padding-left: 2rem;
+}
+
+/* for article's box which follows another div turn off padding */
+.content__person + .content__article .content__article_box 
+{
+    padding: 0;
+}

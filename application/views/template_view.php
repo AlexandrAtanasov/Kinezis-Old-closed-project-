@@ -1,7 +1,3 @@
-<?php
-
-?>
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -14,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../images/logo/favicon.png">
+    <link rel="icon" type="image/png" href="/../images/logo/favicon.png">
 
     <link rel="stylesheet" href="/../../css/grid.css">
     <link rel="stylesheet" href="/../../css/main_style.css">
