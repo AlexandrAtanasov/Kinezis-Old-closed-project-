@@ -2,6 +2,9 @@
 .content__article {
     width: 100%;
 }
+.content__article_body {
+    width: 90%;
+}
 .content__article_box {
     display: flex;
     flex-direction: column;
@@ -27,23 +30,32 @@
     background: #717171;
     margin: 1rem 1rem 0 1rem;
     width: 90%;
-    height: 20rem;
+    /* height: 20rem; */
+    height: 200px;
     align-items: center;
 }
 .content__article_img_elem {
-    background-size: auto auto;
+    /* background-size: auto auto; */
     background-position: center;
     background-repeat: no-repeat;
     display: block;
     /* width: 100%; */
-    height: 100%;
+    /* height: 100%; */
+    height: inherit;
+    min-height: fit-content;
+    background-size: contain;
 }
 .content__article ul {
     padding-left: 2rem;
 }
 
 /* for article's box which follows another div turn off padding */
-.content__person + .content__article .content__article_box 
+.content__person + .content__article > .content__article_box:first-of-type
+ 
 {
     padding: 0;
+}
+
+.content__activities ~ .content__article .content__article_img_elem {
+    background-size: cover;
 }

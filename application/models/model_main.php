@@ -27,6 +27,18 @@
                 FROM `main_page_advantages`;");
             return $result2;
         }
+        // public function get_data3()
+        // {
+        //     // $result = null;
+        //     $pdo = null;
+        //     require __DIR__ . '/../core/std_incl.php';
+        //     $pdo->query("SET CHARACTER SET 'utf8'");
+            
+        //     $result3 = $pdo->query("SELECT
+        //         `Title`, `SubTitle`, `Article`, `Img` 
+        //         FROM `main_page_centers`;");
+        //     return $result3;
+        // }
     }
 
 ?>
