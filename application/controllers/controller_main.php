@@ -13,8 +13,8 @@
         {
             $data = $this -> model -> get_data();
             $data2 = $this -> model -> get_data2();
-            // $data3 = $this -> model -> get_data3();
-            $this->view->generate('main_view.php', 'template_view.php', $data, $data2);
+            $data3 = $this -> model -> get_data3();
+            $this->view->generate('main_view.php', 'template_view.php', $data, $data2, $data3);
         }
     }
 

@@ -14,19 +14,19 @@
 
                         <div class="content__article_img">
                             <div class="content__article_img_elem" style="background-image: url('
-                                . $row['Img'] 
+                                . $row['Img1'] 
                                 . ')">
                             </div>
                         </div>
                         <div class="content__article_img">
                             <div class="content__article_img_elem" style="background-image: url('
-                                . $row['Img'] 
+                                . $row['Img2'] 
                                 . ')">
                             </div>
                         </div>
                         <div class="content__article_img">
                             <div class="content__article_img_elem" style="background-image: url('
-                                . $row['Img'] 
+                                . $row['Img3'] 
                                 . ')">
                             </div>
                         </div>
