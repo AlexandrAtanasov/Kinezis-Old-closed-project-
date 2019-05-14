@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="/../../css/overlay.css">
     <link rel="stylesheet" href="/../../css/scrollingElements.css">
     <link rel="stylesheet" href="/../../css/media_query.css">
+    <link rel="stylesheet" href="/../../css/slider.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<title>Главная</title>
@@ -48,6 +49,7 @@
         include(__DIR__ . '/../../html/footer.html');
         include(__DIR__ . '/../../html/overlay_callback.html');
         include(__DIR__ . '/../../html/overlay_menu.html');
+        include(__DIR__ . '/../../html/overlay_slider.html');
         // include('./html/end.html');
 	?>
 
@@ -59,6 +61,10 @@
     <script src="../../js/overlay_callback.js"></script>
     <script src="../../js/overlay_menu.js"></script>
     <script src="../../js/overlay_callback_submit.js"></script>
+    
+    <script src="../../js/overlaySliderPainting.js"></script>
+    <script src="../../js/slider.js"></script>
+    <script src="../../js/openSlider.js"></script>
 
     </body>
 </html>

@@ -12,19 +12,19 @@
                 echo 
                     '<div class="content__article_elem">
 
-                        <div class="content__article_img">
+                        <div class="content__article_img slider__open">
                             <div class="content__article_img_elem" style="background-image: url('
                                 . $row['Img1'] 
                                 . ')">
                             </div>
                         </div>
-                        <div class="content__article_img">
+                        <div class="content__article_img slider__open">
                             <div class="content__article_img_elem" style="background-image: url('
                                 . $row['Img2'] 
                                 . ')">
                             </div>
                         </div>
-                        <div class="content__article_img">
+                        <div class="content__article_img slider__open">
                             <div class="content__article_img_elem" style="background-image: url('
                                 . $row['Img3'] 
                                 . ')">

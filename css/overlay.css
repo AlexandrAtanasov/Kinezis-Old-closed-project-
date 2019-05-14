@@ -12,7 +12,8 @@
     max-width: inherit;
 }
 .overlay__content_container,
-.overlay__menu_container {
+.overlay__menu_container,
+.overlay__slider_container {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -39,7 +40,8 @@
     /* flex-direction: column; */
 }
 .overlay__content_buttonClose,
-.overlay__menu_buttonClose {
+.overlay__menu_buttonClose,
+.overlay__slider_buttonClose {
     color: white;
     display: flex;
     flex-direction: column;
@@ -50,17 +52,22 @@
     transition: color 1s ease;
 }
 .overlay__content_buttonClose .fas,
-.overlay__menu_buttonClose .fas {
+.overlay__menu_buttonClose .fas,
+.overlay__slider_buttonClose .fas {
     transform: rotate(180deg);
     transition: transform 1s ease;
 }
 .overlay__content_buttonClose:hover,
-.overlay__menu_buttonClose:hover {
+.overlay__menu_buttonClose:hover, 
+.overlay__slider_buttonClose:hover,
+.slider__button_forward:hover,
+.slider__button_backward:hover {
     color: #8FB64C;
     transition: all 1s ease;
 }
 .overlay__content_buttonClose:hover .fas,
-.overlay__menu_buttonClose:hover .fas {
+.overlay__menu_buttonClose:hover .fas,
+.overlay__slider_buttonClose:hover .fas {
     transform: rotate(-180deg);
     transition: transform 1s ease;
 }

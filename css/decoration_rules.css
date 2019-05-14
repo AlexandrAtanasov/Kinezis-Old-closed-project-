@@ -59,8 +59,11 @@ p
 .footer__attention,
 .overlay__content_buttonClose,
 .overlay__menu_buttonClose,
+.overlay__slider_buttonClose,
 .overlay__content_form_title,
-.form__input_submit
+.form__input_submit,
+.slider__button_forward,
+.slider__button_backward
 {
     text-transform: uppercase;
     letter-spacing: 0.05rem;
