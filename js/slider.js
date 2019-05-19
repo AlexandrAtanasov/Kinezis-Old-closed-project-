@@ -11,27 +11,31 @@ document.addEventListener(
         for ( let i = 0; i < imgElemClick.length; i++ ) {
             imgElemClick[i].addEventListener('click', function() {
                 var imgElemClickParent = this.parentNode.parentNode;
+                console.log(this);
+                var clickImgElement = this;
+                console.log(clickImgElement);  
                 var imgElements = imgElemClickParent.getElementsByClassName('content__article_img_elem');
                 console.log(imgElements.length);
                 getImgElementsSrc(imgElements);
-                // switchImages(imgElements, imagesAll);
-                // currentSlide = setFirstImg();
-                // console.log(imgElements.length);
-                // for (let i = 0; i < imgElements.length; i++ ) {
-                //     var style = imgElements[i].currentStyle || window.getComputedStyle(imgElements[i], false);
-                //     // var imgElemetsSrc = style.backgroundImage.slice(4, -1).replace(/"/g, "");
-                //     var imgElemetsSrc = style.backgroundImage.slice(4, -2).replace(/.*\/images\//g, "\/../images/");
-                //     imagesAll[i] = imgElemetsSrc;
-                // };
+                setFirstSlide(imagesAll, clickImgElement);
             })
         };
 
-        // function setFirstImg () {
-        //     var style = this.currentStyle || window.getComputedStyle(this, false);
-        //     var firstImgSrc = style.backgroundImage.slice(4, -2).replace(/.*\/images\//g, "\/../images/");
-        //     console.log(firstImgSrc);
-        //     return firstImgSrc;
-        // }
+        function setFirstSlide(imagesAll, clickImgElement) {
+            var clickElement = clickImgElement;
+            console.log(clickElement);
+            var clickElemStyle = clickElement.currentStyle || getComputedStyle(clickElement, false);
+            var clickImgElemSrc = clickElemStyle.backgroundImage.slice(4, -2).replace(/.*\/images\//g, "\/../images/");
+            console.log('жмакунтое - ' + clickImgElemSrc);
+            console.log(currentSlide);
+                for ( let i = 0; i < imagesAll.length; i++ ) {
+                    if (clickImgElemSrc == imagesAll[i]) {
+                        currentSlide = i;
+                    }; 
+                };
+                img[0].src = imagesAll[currentSlide];
+                return currentSlide;
+        }; 
 
         function getImgElementsSrc(imgElements) {
             for (let i = 0; i < imgElements.length; i++ ) {
@@ -44,9 +48,6 @@ document.addEventListener(
             console.log('массив - ' + imagesAll);
             console.table(imagesAll);
         };
-
-        // function switchImages(imgElements, imagesAll) {
-        //     var clickF = -1;
 
         function goForward(imagesAll) {
             if ( currentSlide+1 > imagesAll.length-1) {
@@ -67,23 +68,11 @@ document.addEventListener(
 
         }
 
-        // function goBackward() {
-        //     currentSlide -= 1;
-        // }
-
         document.getElementsByClassName('slider__button_forward')[0].addEventListener('click', function () {
             currentSlide = goForward(imagesAll);
             img[0].src = imagesAll[currentSlide];
             console.log(currentSlide);
             return currentSlide;
-            // counter();
-            // clickF += 1;
-            // if (clickF > imagesAll.length) {
-            //     clickF = 0;
-            // };
-            // img[0].src = imagesAll[clickF];
-            // console.log('pic - ' + imagesAll[clickF]);
-            // console.log(clickF);
         });
 
         document.getElementsByClassName('slider__button_backward')[0].addEventListener('click', function () {
@@ -91,37 +80,7 @@ document.addEventListener(
             img[0].src = imagesAll[currentSlide];
             console.log(currentSlide);
             return currentSlide;
-            // clickF -= 1;
-            // if (clickF < 1) {
-            //     clickF = imagesAll.length;
-            // }
-            // img[0].src = imagesAll[clickF];
-            // console.log('pic - ' + imagesAll[clickF]);
-            // console.log(clickF);
         });
-    // };
-
-
-        // }
-
-    //     for ( let i = 0; i < numimgElemetsSrcmgElements; i++ ) {
-    //     document.getElementsByClassName('slider__button_forward')[i].addEventListener('click', function () {
-    //         // img[i].src = forwardPic;
-    //         img[i].src = imagesAll[i+1];
-    //     })
-    //     document.getElementsByClassName('slider__button_backward')[i].addEventListener('click', function () {
-    //         // img[i].src = backwardPic;
-    //         img[i].src = imagesAll[i-1];
-    //     })
-    // };
-    
-
-
-
-
-//  }
-
-//  )
 
 
 
@@ -145,4 +104,4 @@ document.addEventListener(
 //         // }
 //       });
 // });
-    })
+})

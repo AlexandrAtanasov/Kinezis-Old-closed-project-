@@ -51,7 +51,8 @@
       }),
       sliderImgElem = $('<img>', {
         class: 'slider__elem_img',
-        src: '/../images/centers/center3.jpg',
+        // src: '/../images/centers/center3.jpg',
+        src: '',
       });
   
     $(overlaySlider).append(sliderBox);
