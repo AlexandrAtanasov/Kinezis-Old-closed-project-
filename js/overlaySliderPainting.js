@@ -2,7 +2,7 @@
 
     var
       // bodyBox = $(document.body), 
-      bodyBox = $('.overlay__slider_container .putSliderHere'), 
+      bodyBox = $('.overlay__slider_container .overlay__slider_elem'), 
       
       // openButton = $('<input>', {
       //   type: 'button',

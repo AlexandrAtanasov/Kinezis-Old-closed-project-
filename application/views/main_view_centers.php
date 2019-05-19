@@ -6,7 +6,7 @@
 
     <div class="content__article_box">
         <?php
-
+    
             foreach(  $data3 as $row )
             {
                 echo 
@@ -48,7 +48,7 @@
 
                     </div>';
             }
-
+       
         ?>
     </div>
 

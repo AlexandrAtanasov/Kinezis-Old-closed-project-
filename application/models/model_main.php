@@ -38,6 +38,7 @@
                 `Img1`, `Img2`, `Img3`, `Title`, `SubTitle`, `Article` 
                 FROM `main_page_centers`;");
             return $result3;
+
         }
     }
 
