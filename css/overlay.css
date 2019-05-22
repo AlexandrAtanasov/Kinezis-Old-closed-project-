@@ -38,6 +38,7 @@
     flex-grow: 1;
     justify-content: center;
     /* flex-direction: column; */
+    z-index: 999;
 }
 .overlay__content_buttonClose,
 .overlay__menu_buttonClose,

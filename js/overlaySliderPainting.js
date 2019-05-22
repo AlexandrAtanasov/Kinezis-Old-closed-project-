@@ -1,20 +1,6 @@
 ;(function addElem() {
-
     var
-      // bodyBox = $(document.body), 
       bodyBox = $('.overlay__slider_container .overlay__slider_elem'), 
-      
-      // openButton = $('<input>', {
-      //   type: 'button',
-      //   class: 'slider__button_open',
-      //   value: 'Open',
-      // }),
-      // closeButton = $('<input>', {
-      //   type: 'button',
-      //   class: 'slider__button_close',
-      //   value: 'Close',
-      // }),
-
       overlaySlider = $('<div>', {
         class: 'overlay__slider_nav',
         css: {
@@ -33,16 +19,16 @@
       sliderImg = $('<div>', {
         class: 'slider__box_img',
       }),
-      sliderButtonInputForward = $('<input>', {
-        type: 'button',
-        class: 'slider__button_forward',
-        value: 'Forward',
-      }),
-      sliderButtonInputBackward = $('<input>', {
-        type: 'button',
-        class: 'slider__button_backward',
-        value: 'Backward',
-      }),
+      // sliderButtonInputForward = $('<input>', {
+      //   type: 'button',
+      //   class: 'slider__button_forward',
+      //   value: 'Forward',
+      // }),
+      // sliderButtonInputBackward = $('<input>', {
+      //   type: 'button',
+      //   class: 'slider__button_backward',
+      //   value: 'Backward',
+      // }),
       sliderButtonInputBackwardArrow = $('<i>', {
         class: 'fas fa-arrow-left slider__button_backward',
       }),
@@ -51,7 +37,6 @@
       }),
       sliderImgElem = $('<img>', {
         class: 'slider__elem_img',
-        // src: '/../images/centers/center3.jpg',
         src: '',
       });
   
@@ -64,6 +49,5 @@
     $(sliderBox).append(sliderButton1, sliderImg, sliderButton2);
     // $(bodyBox).prepend(openButton, closeButton, overlaySlider);
     $(bodyBox).prepend(overlaySlider);
-
     
   })();

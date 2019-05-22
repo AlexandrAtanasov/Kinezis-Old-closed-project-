@@ -4,7 +4,6 @@
     {
         public function get_data()
         {
-            // $result = null;
             $pdo = null;
             require_once __DIR__ . '/../core/std_incl.php';
 
@@ -17,7 +16,6 @@
         }
         public function get_data2()
         {
-            // $result = null;
             $pdo = null;
             require __DIR__ . '/../core/std_incl.php';
             $pdo->query("SET CHARACTER SET 'utf8'");
@@ -29,7 +27,6 @@
         }
         public function get_data3()
         {
-            // $result = null;
             $pdo = null;
             require __DIR__ . '/../core/std_incl.php';
             $pdo->query("SET CHARACTER SET 'utf8'");
@@ -38,6 +35,18 @@
                 `Img1`, `Img2`, `Img3`, `Title`, `SubTitle`, `Article` 
                 FROM `main_page_centers`;");
             return $result3;
+
+        }
+        public function get_data4()
+        {
+            $pdo = null;
+            require __DIR__ . '/../core/std_incl.php';
+            $pdo->query("SET CHARACTER SET 'utf8'");
+            
+            $result4 = $pdo->query("SELECT
+                `Img1`, `Img2`, `Img3`, `Img4`, `Img5`, `Img6` 
+                FROM `main_page_licenses`;");
+            return $result4;
 
         }
     }

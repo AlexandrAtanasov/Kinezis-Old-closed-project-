@@ -28,6 +28,7 @@
     width: 100%;
     height: fit-content;
     object-fit: contain;
+    max-height: 80vh;
 }
 .slider__box_button {
     z-index: 999;

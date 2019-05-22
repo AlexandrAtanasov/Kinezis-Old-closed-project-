@@ -51,11 +51,23 @@
 
 /* for article's box which follows another div turn off padding */
 .content__person + .content__article > .content__article_box:first-of-type
- 
 {
     padding: 0;
 }
 
-.content__activities ~ .content__article .content__article_img_elem {
+.content__activities ~ .content__article .content__article_img_elem 
+{
     background-size: cover;
+}
+
+/* for article's box which contain licences */
+.content__article_licences {
+    flex-direction: row;
+}
+.content__article_licences .content__article_img {
+    min-height: 200px;
+    height: 350px;
+}
+.content__article_licences .content__article_img .content__article_img_licences {
+    background-size: contain;
 }
