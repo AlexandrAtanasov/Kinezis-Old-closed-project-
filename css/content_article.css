@@ -63,6 +63,7 @@
 /* for article's box which contain licences */
 .content__article_licences {
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .content__article_licences .content__article_img {
     min-height: 200px;

@@ -52,5 +52,5 @@ function removeNavClasses() {
 function removeAllClasses() {
     removeHeaderClasses();
     removeNavClasses();
-    console.log("странный размер экрана, ничего не работает!");
+    // console.log("странный размер экрана, ничего не работает!");
 }

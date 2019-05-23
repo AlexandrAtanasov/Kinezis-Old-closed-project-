@@ -8,7 +8,6 @@ $(document).ready(function () {
                     $id = element.id;
                     $('.nav__menu_activities + ul').append('<li><span class="nav__menu_problems" id="' + $id + '">' + $Title + '</span></li>');
                 });
-          }
-        // }
-      });
+            }
+    });
 });

@@ -23,6 +23,7 @@
 }
 .slider__box_img{
     width: fit-content;
+    min-width: 90%;
 }
 .slider__elem_img {
     width: 100%;
