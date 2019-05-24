@@ -44,7 +44,7 @@
             $pdo->query("SET CHARACTER SET 'utf8'");
             
             $result4 = $pdo->query("SELECT
-                `Img1`, `Img2`, `Img3`, `Img4`, `Img5`, `Img6` 
+                `Img` 
                 FROM `main_page_licenses`;");
             return $result4;
 
