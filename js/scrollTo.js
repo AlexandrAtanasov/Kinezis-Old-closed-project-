@@ -33,6 +33,11 @@ $(document).ready(function() {
             $id = $(this).attr('id');
             $elemUrl = '/resolvable/problem/' + $id;
             showContent();
+        } else if($(this).hasClass('nav__menu_additional'))
+        {
+            $id = $(this).attr('id');
+            $elemUrl = '/additional/service/' + $id;
+            showContent();
         } else if($(this).hasClass('nav__menu_reviews'))
         {
             $elemUrl = '/reviews';

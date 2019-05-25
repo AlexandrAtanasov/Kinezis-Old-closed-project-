@@ -45,6 +45,9 @@ nav {
     /* display: inline; */
     display: block;
 }
+/* .nav__menu_drop > li:hover > span::after{
+    content: '<-';
+} */
 /* accept this style for navigation box when scrolling window */
 .fixedNav {
     position: fixed;

@@ -1,6 +1,6 @@
 <div class="content__article decoration__select_none">
     <div class="headline decoration__select_none">
-        <span>С чем мы работаем</span>
+        <span>Дополнительные услуги</span>
     </div>
 
     <div class="content__article_box">
@@ -30,8 +30,8 @@
                         </div>
                             
                     </div>';
-                        }
+            }
                         
-                        ?>
+        ?>
     </div>
 </div>
