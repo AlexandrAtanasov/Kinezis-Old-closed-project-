@@ -42,6 +42,10 @@ $(document).ready(function() {
         {
             $elemUrl = '/reviews';
             showContent();
+        } else if($(this).hasClass('nav__menu_rules'))
+        {
+            $elemUrl = '/rules';
+            showContent();
         }
     });
 })

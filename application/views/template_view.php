@@ -65,6 +65,7 @@
     <script src="../../js/overlaySliderPainting.js"></script>
     <script src="../../js/slider.js"></script>
     <script src="../../js/openSlider.js"></script>
+    <script src="../../js/download_files.js"></script>
 
     </body>
 </html>
