@@ -46,6 +46,10 @@ $(document).ready(function() {
         {
             $elemUrl = '/rules';
             showContent();
+        } else if($(this).hasClass('nav__menu_vacancy'))
+        {
+            $elemUrl = '/vacancy';
+            showContent();
         }
     });
 })

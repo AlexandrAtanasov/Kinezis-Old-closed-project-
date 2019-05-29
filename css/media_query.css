@@ -348,6 +348,9 @@
     .content__person_info {
         min-height: fit-content;
     }
+    .content__article_elem {
+        text-align: left;
+    }
     .content__article_elem,
     .content__contacts_elem {
         width: 100%;
