@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $.ajax({
         url: '/../application/models/nav_additional_services.php',
+        method: 'post',
         success: 
             function(incoming){
                 $addittionalServicesTitle = JSON.parse(incoming).forEach(element => {
