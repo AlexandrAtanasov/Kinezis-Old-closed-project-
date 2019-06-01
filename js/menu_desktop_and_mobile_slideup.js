@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    // for desktop screens
     $(".nav_container > .nav__menu_list > li").on({
         mouseenter:
             function() {
@@ -8,11 +9,8 @@ $(document).ready(function() {
             function() {
                 $(this).find(">ul").stop().slideToggle(300)
             },
-    })
-})
-
-// for mobile menu
-$(document).ready(function() {
+    });
+    // for mobile menu
     $(".overlay__menu_container > .overlay__menu_nav > .nav__menu_list > li").on({
         click:
             function() {
@@ -21,5 +19,5 @@ $(document).ready(function() {
                 // find this element and open his submenu    
                 $(this).find("+ul").stop().slideToggle(300);
             }
-    })
+    });
 })

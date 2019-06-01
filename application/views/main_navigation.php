@@ -1,4 +1,7 @@
 <!-- menu box of header -->
+<?php
+include(__DIR__ . '/main_navigation_lists.php' );
+?>
 <nav>
     <div class="scroll__menu_element">
         
@@ -15,7 +18,20 @@
                         Решаемые проблемы
                     </span>
                     <ul class='nav__menu_drop decoration__select_none decoration__list_none'>
-                    
+                        <?php
+                            // include ( __DIR__ . '/main_navigation_lists.php' );
+                            foreach( $problemsList as $row )
+                            {
+                                echo
+                                '
+                                    <li>
+                                        <span class="nav__menu_problems" id="' . $row['id'] . '">'
+                                        . $row['Title']
+                                        . '</span>
+                                    </li>
+                                ';
+                            }
+                        ?>
                     </ul>
                 </li>
 
@@ -25,7 +41,20 @@
                         Дополнительные услуги
                     </span>
                     <ul class='nav__menu_drop decoration__select_none decoration__list_none'>
-                    
+                        <?php
+                            // include ( __DIR__ . '/main_navigation_lists.php' );
+                            foreach( $additionalList as $row )
+                            {
+                                echo
+                                '
+                                    <li>
+                                        <span class="nav__menu_additional" id="' . $row['id'] . '">'
+                                        . $row['Title']
+                                        . '</span>
+                                    </li>
+                                ';
+                            }
+                        ?>
                     </ul>
                 </li>
                

@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="/../../css/grid.css">
     <link rel="stylesheet" href="/../../css/main_style.css">
     <link rel="stylesheet" href="/../../css/decoration_rules.css">
-    <link rel="stylesheet" href="/../../css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="/../../css/fontawesome/css/all.css"> -->
     <link rel="stylesheet" href="/../../css/header.css">
     <link rel="stylesheet" href="/../../css/navigation.css">
     <link rel="stylesheet" href="/../../css/content_activities.css">
@@ -36,26 +37,26 @@
 
 	<?php
 		include(__DIR__ . '/../../html/header.html');
-		include(__DIR__ . '/../../html/navigation.html');
+        // include(__DIR__ . '/../../html/navigation.html');
+        // include(__DIR__ . '/main_navigation_lists.php' );
+		include(__DIR__ . '/main_navigation.php');
 		include(__DIR__ . '/../../html/main__content_start.html');
-	?>
 
-	<?php
-		include(__DIR__ . '/../views/' . $content_view)
-	?>
+		include(__DIR__ . '/../views/' . $content_view);
 
-	<?php
         include(__DIR__ . '/../../html/main__content_stop.html');
         include(__DIR__ . '/../../html/footer.html');
         include(__DIR__ . '/../../html/overlay_callback.html');
-        include(__DIR__ . '/../../html/overlay_menu.html');
+        // include(__DIR__ . '/../../html/overlay_menu.html');
+        // include(__DIR__ . '/main_navigation_lists.php' );
+        include(__DIR__ . '/main_overlay_navigation.php');
         include(__DIR__ . '/../../html/overlay_slider.html');
         // include('./html/end.html');
 	?>
 
 
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-    <script src="../../js/menu.js"></script>
+    <script src="../../js/menu_desktop_and_mobile_slideup.js"></script>
     <script src="../../js/scroll_window.js"></script>
     <script src="../../js/scrollTo.js"></script>
     <script src="../../js/overlay_callback.js"></script>
