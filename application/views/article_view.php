@@ -6,14 +6,15 @@
     <div class="content__article_box">
         <?php
 
-            foreach(  $data as $row )
+            foreach( $data as $row )
             {
                 echo 
-                    '<div class="content__article_elem">
+                    '
+                    <div class="content__article_elem">
 
                         <div class="content__article_img">
                             <div class="content__article_img_elem" style="background-image: url('
-                                . $row['Img'] 
+                                . $row["Img"] 
                                 . ')">
                             </div>
                         </div>
@@ -33,9 +34,11 @@
                             . '</span>
                         </div>
 
-                    </div>';
+                    </div>
+                    ';
             }
 
         ?>
+
     </div>
 </div>

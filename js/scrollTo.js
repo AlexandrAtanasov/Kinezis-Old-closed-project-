@@ -11,14 +11,12 @@ $(document).ready(function() {
             // $elemClass = '.content__article';
             $elemUrl = '/article';
             showContent();
-        }
-         else if ($(this).hasClass('nav__menu_contacts'))
+        } else if ($(this).hasClass('nav__menu_contacts'))
         {
             // $elemClass = '.content__contacts';
             $elemUrl = '/contacts';
             showContent();
-        }
-         else if($(this).hasClass('nav__menu_priceServices'))
+        } else if($(this).hasClass('nav__menu_priceServices'))
         {
             // $elemClass = '.content__price';
             $elemUrl = '/price';

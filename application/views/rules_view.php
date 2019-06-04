@@ -17,7 +17,7 @@
                     <h2>Правила посещения</h2> 
                 </span>
                 <span class="content__article_article">
-                    <a class='download__link_visitingRules' target='_blank' >
+                    <a href="/../../download/VisitingRules.doc" class='download__link_visitingRules'>
                         Скачать "Правила посещения центров ООО "КИНЕЗИС"
                     </a>
                 </span>
@@ -25,7 +25,7 @@
                     <h2>Условия и порядок предоставления услуг</h2> 
                 </span>
                 <span class="content__article_article">
-                    <a class='download__link_conditions'>
+                    <a href="/../../download/ConditionsAndOtherRules.doc" class='download__link_conditions'>
                         Скачать "Условия и порядок предоставления услуг"
                     </a>    
                 </span>

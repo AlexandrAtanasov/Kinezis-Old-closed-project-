@@ -5,7 +5,7 @@
         public function get_data()
         {
             $pdo = null;
-            require_once __DIR__ . '/../core/std_incl.php';
+            require __DIR__ . '/../core/std_incl.php';
 
             $pdo->query("SET CHARACTER SET 'utf8'");
 
