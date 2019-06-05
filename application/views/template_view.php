@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -41,7 +41,7 @@
         // include(__DIR__ . '/main_navigation_lists.php' );
 		include(__DIR__ . '/main_navigation.php');
 		include(__DIR__ . '/../../html/main__content_start.html');
-    
+
 		include(__DIR__ . '/../views/' . $content_view);
 
         include(__DIR__ . '/../../html/main__content_stop.html');
@@ -66,6 +66,7 @@
     <script src="../../js/overlaySliderPainting.js"></script>
     <script src="../../js/slider.js"></script>
     <script src="../../js/openSlider.js"></script>
+    <!-- <script src="../../js/download_files.js"></script> -->
 
     </body>
 </html>

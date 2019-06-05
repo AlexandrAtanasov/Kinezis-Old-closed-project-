@@ -4,6 +4,7 @@ $(document).ready(function() {
 		event.stopImmediatePropagation();
 		$(".overlay__menu_container").toggleClass("overlay__hide");
 		$(".overlay__blur").toggleClass("blur");
+		$("html, body").stop().animate({scrollTop:0}, 500);
 	});
 	$(".overlay__menu_buttonClose").on('click', function (event){
 		event.stopPropagation();

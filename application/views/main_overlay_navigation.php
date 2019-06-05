@@ -4,7 +4,7 @@
     $additionalList = Navigation_List::getAdditionalList();
     $problemsList = Navigation_List::getProblemsList();
 ?>
-<div class="overlay__menu_container overlay__hide">
+<div class="overlay__menu_container overlay__mobile overlay__hide">
     
     <div class="overlay__content_buttonBox decoration__select_none">
         <div class="overlay__menu_buttonClose">
