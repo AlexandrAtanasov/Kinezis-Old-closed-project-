@@ -2,7 +2,7 @@
 header{
     background-color: white;
     height: fit-content;
-    min-height: 20vh;
+    /* min-height: 20vh; */
     max-height: 55vh;
     display: grid;
     width: inherit;

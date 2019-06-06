@@ -12,11 +12,12 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link rel="icon" type="image/png" href="/../images/logo/favicon.png">
 
-    <link rel="stylesheet" href="/../../css/grid.css">
+    <!-- <link rel="stylesheet" href="/../../css/fontawesome/css/all.css"> -->
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="/../../css/grid.css">
     <link rel="stylesheet" href="/../../css/main_style.css">
     <link rel="stylesheet" href="/../../css/decoration_rules.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="/../../css/fontawesome/css/all.css"> -->
     <link rel="stylesheet" href="/../../css/header.css">
     <link rel="stylesheet" href="/../../css/navigation.css">
     <link rel="stylesheet" href="/../../css/content_activities.css">
@@ -28,7 +29,8 @@
     <link rel="stylesheet" href="/../../css/overlay.css">
     <link rel="stylesheet" href="/../../css/scrollingElements.css">
     <link rel="stylesheet" href="/../../css/media_query.css">
-    <link rel="stylesheet" href="/../../css/slider.css">
+    <link rel="stylesheet" href="/../../css/slider.css"> -->
+    <link rel="stylesheet" href="/../../css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<title>Главная</title>

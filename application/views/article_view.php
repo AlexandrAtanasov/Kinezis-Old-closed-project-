@@ -6,7 +6,7 @@
     <div class="content__article_box">
         <?php
 
-            foreach( $data as $row )
+            foreach ($data as $row)
             {
                 echo 
                     '
