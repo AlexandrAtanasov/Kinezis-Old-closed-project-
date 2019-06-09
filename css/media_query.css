@@ -342,7 +342,7 @@
         width: 47%;
         min-width: 0;
         height: auto;
-        margin: 0 .2rem 0.4rem;
+        margin: 0 .2rem 1rem;
     }
     .content__person_info {
         min-height: fit-content;

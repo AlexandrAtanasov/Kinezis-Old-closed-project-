@@ -1,3 +1,5 @@
+// $(document).ready(function() {
+
 ;(function addElem() {
     var
       bodyBox = $('.overlay__slider_container .overlay__slider_elem'), 
@@ -51,3 +53,5 @@
     $(bodyBox).prepend(overlaySlider);
     
   })();
+
+// })

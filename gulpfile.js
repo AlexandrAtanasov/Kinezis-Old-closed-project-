@@ -6,6 +6,7 @@ var gulp = require('gulp'),
 	// gl = require('gulp-load-plugins')();
 	concat = require('gulp-concat'),
 	autoprefixer = require('gulp-autoprefixer'),
+	uglify = require('gulp-uglify'),
 	csso = require('gulp-csso');
 
 // sass.compiler = require('node-sass');
@@ -59,7 +60,8 @@ gulp.task('copy_index', function() {
 
 // concat js and css tasks
 gulp.task('concat_css', function() {
-	return gulp.src(['./css/grid.css',
+	return gulp.src([
+					'./css/grid.css',
 					 './css/main_style.css',
 					 './css/decoration_rules.css',
 					 './css/header.css',
@@ -73,7 +75,8 @@ gulp.task('concat_css', function() {
 					 './css/overlay.css',
 					 './css/scrollingElements.css',
 					 './css/media_query.css',
-					 './css/slider.css'])
+					 './css/slider.css'
+					])
 	.pipe(concat('style.css'))
 	.pipe(autoprefixer({
     	browsers: ['last 10 versions'],
@@ -84,14 +87,20 @@ gulp.task('concat_css', function() {
 	// .pipe(browserSync.stream());
   });
 gulp.task('concat_js', function() {
-	return gulp.src(['./js/menu.js',
+	return gulp.src([
+					'./js/menu_desktop_and_mobile_slideup.js',
 					 './js/scroll_window.js',
 					 './js/scrollTo.js',
 					 './js/overlay_callback.js',
 					 './js/overlay_menu.js',
-					 './js/overlay_callback_submit.js'])
-	.pipe(gl.concat('KINEZIS_scripts.js'))
-	.pipe(gl.uglify())
+					 './js/overlay_callback_submit.js',
+					 './js/overlaySliderPainting.js',
+					 './js/slider.js',
+					 './js/openSlider.js',
+					 './js/download_files.js'
+					])
+	.pipe(concat('script.js'))
+	.pipe(uglify())
 	.pipe(gulp.dest('./js/'))
 	// .pipe(browserSync.stream());;
   });

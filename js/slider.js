@@ -5,7 +5,7 @@ document.addEventListener(
         var imagesAll = [];
         var currentSlide = -1;
         var imgElemClick = document.getElementsByClassName('content__article_img_elem');
-        for ( let i = 0; i < imgElemClick.length; i++ ) {
+        for ( var i = 0; i < imgElemClick.length; i++ ) {
             imgElemClick[i].addEventListener('click', function() {
                 var imgElemClickParent = this.parentNode.parentNode;
                 var clickImgElement = this;
@@ -19,7 +19,7 @@ document.addEventListener(
             var clickElement = clickImgElement;
             var clickElemStyle = clickElement.currentStyle || getComputedStyle(clickElement, false);
             var clickImgElemSrc = clickElemStyle.backgroundImage.slice(4, -2).replace(/.*\/images\//g, "\/../images/");
-                for ( let i = 0; i < imagesAll.length; i++ ) {
+                for ( var i = 0; i < imagesAll.length; i++ ) {
                     if (clickImgElemSrc == imagesAll[i]) {
                         currentSlide = i;
                     }; 
@@ -29,7 +29,7 @@ document.addEventListener(
         }; 
 
         function getImgElementsSrc(imgElements) {
-            for (let i = 0; i < imgElements.length; i++ ) {
+            for (var i = 0; i < imgElements.length; i++ ) {
                 var style = imgElements[i].currentStyle || window.getComputedStyle(imgElements[i], false);
                 var imgElemetsSrc = style.backgroundImage.slice(4, -2).replace(/.*\/images\//g, "\/../images/");
                 imagesAll[i] = imgElemetsSrc;
@@ -52,7 +52,7 @@ document.addEventListener(
                 currentSlide -= 1;
             };
             return currentSlide;
-        }
+        };
 
         document.getElementsByClassName('slider__button_forward')[0].addEventListener('click', function() {
             currentSlide = goForward(imagesAll);
