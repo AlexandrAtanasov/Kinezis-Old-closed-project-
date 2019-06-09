@@ -109,7 +109,7 @@
         "hlb hlb hcb hmb";
     }
     .header__logo_img {
-        /* height: 10rem; */
+        height: 15vh;
         background-position: left;
     }
     nav {
@@ -156,19 +156,9 @@
         color: white;
         font-size: 1.1rem;
         letter-spacing: 0.05rem;
-        height: 10vh;
+        height: 8vh;
+        line-height: 1.3rem;
         width: 100%;
-    }
-    .overlay__menu_nav .nav__menu_list>li::after {
-        position: absolute;
-        content: "";
-        width: 70%;
-        transition: width 0.5s ease;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-bottom: 2px solid #53741A;
-        transition: all 0.5s ease;
     }
     .overlay__menu_nav .nav__menu_list>li:hover {
         background-color: transparent;
@@ -188,14 +178,14 @@
         display: none;
         position: inherit;
         left: 0;
-        background: rgba(142, 178, 81, 0.24);
+        background: linear-gradient(to top, rgba(142, 178, 81, 0.34) 40%, rgba(142, 178, 81, 0.21) 70%, rgba(142, 178, 81, 0.09) 90%, transparent);
         padding-left: 0.5rem;
         padding-right: 0.5rem;
         width: 100%;
         height: fit-content;
         z-index: 9999;
+        border-radius: 0.6rem;
         box-shadow: none;
-        /* border-bottom: 2px solid #53741A; */
     }
     .overlay__menu_nav {
         margin-top: 6rem;
@@ -203,7 +193,7 @@
         width: 100%;
     }
 }
-@media screen and (max-width: 910px) {
+@media screen and (min-width: 401px) and (max-width: 910px) {
     body {
         width: 100%;
         /* min-width: 1040px; */
@@ -221,7 +211,6 @@
     }  
     header {
         height: 12vh;
-        min-height: 7vh;
     }
     .header__container {
         grid-template-columns: repeat(4, 1fr);
@@ -254,7 +243,7 @@
     .header__menu_button_text {
         padding-left: 0;
         padding-right: 0;
-        font-size: 0.6rem;
+        font-size: 1rem;
         letter-spacing: 0;
     }
     .fixedNav {
@@ -336,14 +325,24 @@
         height: 100%;
         width: 100%;
     }
-    .content__activities_elem {
+    /* .content__activities_elem {
         height: fit-content;
-        min-width: 15rem;
-        width: 100%;
+        /* min-width: 15rem; */
+        /* width: 100%;
+    } */
+    .content__activities_elem
+    {
+        width: 47%;
+        min-width: 0;
+        height: auto;
+        margin: 0 .2rem 1rem;
     }
-    .content__person_elem {
-        width: 100%;
-        height: fit-content;
+    .content__person_elem 
+    {
+        width: 47%;
+        min-width: 0;
+        height: auto;
+        margin: 0 .2rem 0.4rem;
     }
     .content__person_info {
         min-height: fit-content;
@@ -410,5 +409,229 @@
         font-size: 0.8rem;
         border-radius: 0;
         box-shadow: none;
+    }
+    .form__input_field_name, .form__input_field_number {
+        height: 1rem;
+    }
+    .form__input_submit
+    {
+        border: 0;
+        padding: 0.2rem;
+        height: 2rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    body {
+        width: 100%;
+        /* min-width: 1040px; */
+        max-width: 910px;
+    }
+    .mainDiv {
+        width: inherit;
+        margin: 0 auto;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+        "h h h h h"
+        "c c c c c"
+        "f f f f f";
+    }  
+    header {
+        height: 12vh;
+    }
+    .header__container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        "hlb hlb hcb hmb";
+        padding-top: 0.3rem;
+    }
+    .header__logo_img {
+        height: 10vh;
+        background-position: left;
+    }
+    nav {
+        display: none;
+    }
+    .header__timetable_box,
+    .header__address_box,
+    .header__logo_text {
+        display: none;
+    }
+    .header__menu_box {
+        display: block;
+    }
+    .header__callback_button,
+    .header__menu_button {
+        width: 90%;
+        height: 90%;
+        padding: 0;
+    }
+    .header__callback_button_text,
+    .header__menu_button_text
+    {
+        font-size: 0.8rem;
+    }
+    .fixedNav {
+        width: 100%;
+        /* height: 10rem;
+        min-height: fit-content;
+        max-height: 15vh; */
+    }
+    .scroll__menu_element_fix {
+        width: 100%;
+    }
+    .mainMarg {
+        margin-top: 10vh;
+    }
+    /* overlay menu */
+    /* styles for mobile menu list  */
+    .overlay__content_callbackForm {
+        width: 100%;
+        min-width: 100%;
+    }
+    .overlay__menu_nav .nav__menu_list>li,
+    .nav__menu_drop>li {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        color: white;
+        font-size: 1.1rem;
+        letter-spacing: 0.05rem;
+        height: 8vh;
+        line-height: 1.3rem;
+        width: 100%;
+    }
+    .overlay__menu_nav .nav__menu_list>li:hover {
+        background-color: transparent;
+    }
+    .overlay__menu_nav .nav__menu_list>li:hover::after {
+        background-color: none;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+    .overlay__menu_nav>.nav__menu_list {
+        flex-direction: column;
+        justify-content: start;
+        height: 100%;
+        width: 100%;
+    }
+    .overlay__menu_nav .nav__menu_drop {
+        display: none;
+        position: inherit;
+        left: 0;
+        background: linear-gradient(to top, rgba(142, 178, 81, 0.34) 40%, rgba(142, 178, 81, 0.21) 70%, rgba(142, 178, 81, 0.09) 90%, transparent);
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        width: 100%;
+        height: fit-content;
+        z-index: 9999;
+        border-radius: 0.6rem;
+        box-shadow: none;
+    }
+    .overlay__menu_nav {
+        margin-top: 6rem;
+        height: 100%;
+        width: 100%;
+    }
+    .content__activities_elem, 
+    .content__person_elem
+    {
+        width: 100%;
+        height: auto;
+    }
+    .content__person_elem {
+        width: 100%;
+        height: fit-content;
+    }
+    .content__person_info {
+        min-height: fit-content;
+    }
+    .content__article_elem {
+        text-align: left;
+    }
+    .content__article_elem,
+    .content__contacts_elem {
+        width: 100%;
+    }
+    .content__contacts_elem,
+    .content__prices_title {
+        text-align: center;
+    }
+    .content__article_box,
+    .content__contacts_box,
+    .content__price_box {
+        flex-direction: column;
+        margin: 0 0.5rem 0 0.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .content__article_img {
+        margin-top: 1rem;
+        width: 100%;
+        height: 10rem;
+        min-height: 5rem;
+        max-height: fit-content;
+    }
+    .footer__content {
+        padding: 0 0.5rem 0 0.5rem;
+    }
+    .footer__content_elem {
+        margin-top: 0.5rem;
+    }
+    .footer__attention,
+    .footer__info_title {
+        font-size: 0.8rem;
+    }
+    .content__price_abonementTable,
+    .content__price_supportTable,
+    .content__price_saleTable,
+    .content__price_servicesTable {
+        display: block;
+        text-align: -webkit-center;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+        padding: 0;
+        /* border: 1px solid #8FB64C; */
+        overflow: auto;
+        width: 100%;
+        max-width: 100%;
+    }
+    .content__price_services,
+    .content__price_abonement,
+    .content__price_support,
+    .content__price_sale,
+    .content__price_saleTable {
+        margin: 0 0.5rem 1rem 0.5rem;
+        width: 100%;
+    }
+    .content__price table, 
+    .content__sale table {
+        font-size: 0.8rem;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    /* .content__article_title h1 
+    {
+        font-size: 1.1rem;
+    } */
+    .header__callback_button_text
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .form__input_field_name, .form__input_field_number {
+        height: 1rem;
+    }
+    .form__input_submit
+    {
+        border: 0;
+        padding: 0.2rem;
+        height: 2rem;
     }
 }

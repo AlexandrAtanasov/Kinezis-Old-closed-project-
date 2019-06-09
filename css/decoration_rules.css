@@ -65,6 +65,7 @@ p
 .slider__button_forward,
 .slider__button_backward
 {
+    word-wrap: break-word;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
     font-weight: 600;
