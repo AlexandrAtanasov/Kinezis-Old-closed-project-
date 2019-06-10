@@ -14,7 +14,8 @@
             $data2 = $this -> model -> get_data2();
             $data3 = $this -> model -> get_data3();
             $data4 = $this -> model -> get_data4();
-            $this->view->generate('main_view.php', 'template_view.php', $data, $data2, $data3, $data4);
+            $data5 = $this -> model -> get_data5();
+            $this->view->generate('main_view.php', 'template_view.php', $data, $data2, $data3, $data4, $data5);
         }
     }
 
