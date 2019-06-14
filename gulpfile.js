@@ -2,28 +2,40 @@
 
 var gulp = require('gulp'),
 	// sass = require('gulp-sass'),
-	// browserSync = require('browser-sync').create(),
 	// gl = require('gulp-load-plugins')();
+	browserSync = require('browser-sync').create(),
 	concat = require('gulp-concat'),
 	autoprefixer = require('gulp-autoprefixer'),
 	uglify = require('gulp-uglify'),
+	clean = require('gulp-clean'),
 	csso = require('gulp-csso');
 
 // sass.compiler = require('node-sass');
 
 // starting server
-gulp.task('serve', function() {
-    browserSync.init({
-			proxy: "http://kinezis.perm/",
-			host: 'kinezis.perm',
-			port: 3000,
-			open: 'external',
-			// notify:    true,
-			// ghost:     true,
-			// files:     ['C:\\Users\\Александр\\Desktop\\ospanel\\domains\\kinezis.perm\\']
-	});
-	browserSync.watch("C:\\Users\\Александр\\Desktop\\ospanel\\domains\\kinezis.perm\\").on('change', browserSync.reload)
-});
+// Static server
+// gulp.task('browser-sync', function() {
+//     browserSync.init({
+//         server: {
+//             baseDir: "/"
+//         }
+//     });
+// 	// gulp.watch("./").on('change', browserSync.reload)
+// });
+//proxy
+// gulp.task('browser-sync', function() {
+//     browserSync.init({
+// 			proxy: "http://kinezis.perm/",
+// 			host: 'kinezis.perm',
+// 			port: 3000,
+// 			open: 'external',
+// 			notify:    true,
+// 			ghost:     true,
+// 			// files:     ['C:\\Users\\Александр\\Desktop\\ospanel\\domains\\kinezis.perm\\']
+// 			files:     ['/']
+// 	});
+// // 	browserSync.watch("C:\\Users\\Александр\\Desktop\\ospanel\\domains\\kinezis.perm\\").on('change', browserSync.reload)
+// });
 
 // working whith sass
 // gulp.task('sass', function () {
@@ -74,16 +86,17 @@ gulp.task('concat_css', function() {
 					 './css/footer.css',
 					 './css/overlay.css',
 					 './css/scrollingElements.css',
-					 './css/media_query.css',
-					 './css/slider.css'
+					 './css/slider.css',
+					 './css/carousel.css',
+					 './css/media_query.css'
 					])
 	.pipe(concat('style.css'))
 	.pipe(autoprefixer({
-    	browsers: ['last 10 versions'],
+    	// browsers: ['last 10 versions'],
     	cascade: false}))
 	.pipe(csso())
 	// .pipe(gulp.dest('C:\\Users\\Александр\\Desktop\\ospanel\\domains\\kinezis.perm\\css\\'))
-	.pipe(gulp.dest('./css/'))
+	.pipe(gulp.dest('./public/css/'))
 	// .pipe(browserSync.stream());
   });
 gulp.task('concat_js', function() {
@@ -103,6 +116,7 @@ gulp.task('concat_js', function() {
 	.pipe(concat('script.js'))
 	.pipe(uglify())
 	.pipe(gulp.dest('./public/js/'))
+	
 	// .pipe(browserSync.stream());;
   });
 
@@ -112,16 +126,16 @@ gulp.task('clean_dest_img', function() {
 		{read:false}).pipe(gl.clean({force:true}))
 });
 gulp.task('clean_dest_css', function() {
-	return gulp.src('C:\\Users\\Александр\\Desktop\\ospanel\\domains\\kinezis.perm\\css\\**\\*.*',
-		{read:false}).pipe(gl.clean({force:true}))
+	return gulp.src('./public/css/**/*.*',
+		{read:false}).pipe(clean({force:true}))
 });
 gulp.task('clean_dest_html', function() {
 	return gulp.src('C:\\Users\\Александр\\Desktop\\ospanel\\domains\\kinezis.perm\\html\\**\\*.*',
 		{read:false}).pipe(gl.clean({force:true}))
 });
 gulp.task('clean_dest_js', function() {
-	return gulp.src('C:\\Users\\Александр\\Desktop\\ospanel\\domains\\kinezis.perm\\js\\**\\*.*',
-		{read:false}).pipe(gl.clean({force:true}))
+	return gulp.src('./public/js/**/*.*',
+		{read:false}).pipe(clean({force:true}))
 });
 gulp.task('clean_dest_php', function() {
 	return gulp.src('C:\\Users\\Александр\\Desktop\\ospanel\\domains\\kinezis.perm\\php\\**\\*.*',
@@ -134,8 +148,8 @@ gulp.task('clean_dest_index', function() {
 
 // watching for folders for any changes task
 gulp.task('watchThis', function() {
-	gulp.watch('./js/**/*.js', gulp.series('concat_js') );
-	// gulp.watch('./dev/css/**/*.css', gulp.series('clean_dest_css', 'concat_css') );
+	gulp.watch('./js/**/*.js', gulp.series('clean_dest_js', 'concat_js') );
+	gulp.watch('./css/*.css', gulp.series('clean_dest_css', 'concat_css') );
 	// gulp.watch('./dev/js/**/*.js', gulp.series('clean_dest_js', 'concat_js') );
 	// gulp.watch('./dev/html/**/*.html', gulp.series('clean_dest_html', 'copy_html') );
 	// gulp.watch('./dev/img/**/*.*', gulp.series('clean_dest_img', 'copy_img') );
@@ -144,7 +158,10 @@ gulp.task('watchThis', function() {
 });
 
 
-gulp.task('default', gulp.parallel('watchThis', 'serve'));
+gulp.task('default', 
+	// gulp.parallel('watchThis', 'serve'),
+	gulp.parallel('watchThis'),
+	);
 
 // task for copying working files from OSP to public   
 gulp.task('clearPublic', function() {

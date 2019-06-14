@@ -1,0 +1,22 @@
+.content__article_carousel {
+    height: 60vh;
+}
+.content__elem_carousel {
+    width: 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: inherit;
+}
+
+.content__elem_carousel_hide {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+
+}
+.content__elem_carousel_show {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 1s;
+}

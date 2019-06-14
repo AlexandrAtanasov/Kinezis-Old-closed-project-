@@ -192,6 +192,12 @@
         height: 100%;
         width: 100%;
     }
+    .content__article_carousel {
+        height: 40vh;
+    }
+    .content__elem_carousel {
+        width: 100%;
+    }
 }
 @media screen and (min-width: 401px) and (max-width: 910px) {
     body {
@@ -419,6 +425,12 @@
         padding: 0.2rem;
         height: 2rem;
     }
+    .content__article_carousel {
+        height: 40vh;
+    }
+    .content__elem_carousel {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 400px) {
     body {
@@ -633,5 +645,11 @@
         border: 0;
         padding: 0.2rem;
         height: 2rem;
+    }
+    .content__article_carousel {
+        height: 40vh;
+    }
+    .content__elem_carousel {
+        width: 100%;
     }
 }
