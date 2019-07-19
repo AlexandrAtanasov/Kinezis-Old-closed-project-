@@ -13,13 +13,31 @@
                 $service = $routes[3];
             };
 
-            require_once __DIR__ . '/../core/std_incl.php';
+            $result = null;
+            $pdo = null;
+            require __DIR__ . '/../core/std_incl.php';
+
             $pdo->query("SET CHARACTER SET 'utf8'");
+            
             $result = $pdo->query("SELECT 
                 `Title`, `Article`, `Img` 
                 FROM `additional_services_list` WHERE id = " . $service  . ";");
             return $result;
         }
+        public function get_data3()
+        {
+            $result = null;
+            $pdo = null;
+            require __DIR__ . '/../core/std_incl.php';
+
+            $pdo->query("SET CHARACTER SET 'utf8'");
+            
+            $result = $pdo->query("SELECT 
+                `Title`, `Article`, `Img` 
+                FROM `additional_equipment_list`");
+            return $result;
+        }
+
     }
 
 ?>

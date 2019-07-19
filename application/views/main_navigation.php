@@ -55,6 +55,11 @@ include(__DIR__ . '/main_navigation_lists.php' );
                                 ';
                             }
                         ?>
+                        <li>
+                            <span class="nav__menu_equipment">
+                                Продажа тренажёров
+                            </span>
+                        </li>
                     </ul>
                 </li>
                
@@ -73,14 +78,6 @@ include(__DIR__ . '/main_navigation_lists.php' );
                         </li>
                     </ul>  
                 </li>
-
-
-                <li>
-                    <span class="nav__menu_reviews">
-                        Отзывы
-                    </span>
-                </li>
-
 
                 <li>О нас
                     <ul class='nav__menu_drop decoration__select_none decoration__list_none'>
@@ -106,6 +103,15 @@ include(__DIR__ . '/main_navigation_lists.php' );
                         </li>
                     </ul>
                 </li>
+
+                <li>
+                    <span class="nav__menu_reviews">
+                        Отзывы
+                    </span>
+                </li>
+
+
+                
 
                 <li>
                     <span class="nav__menu_contacts">

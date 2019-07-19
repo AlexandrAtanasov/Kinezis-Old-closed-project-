@@ -62,31 +62,12 @@
                             ';
                         }
                     ?>
+                    <li>
+                        <span class="nav__menu_equipment">
+                            Продажа тренажёров
+                        </span>
+                    </li>
                 </ul>
-
-
-            <li>
-                Цены
-            </li>
-                <ul class='nav__menu_drop decoration__select_none decoration__list_none'>
-                    <li>
-                        <span class="nav__menu_priceServices">
-                            Стоимость услуг
-                        </span>
-                    </li>
-                    <li>
-                        <span class="nav__menu_priceSale">
-                            Акции и скидки
-                        </span>
-                    </li>
-                </ul>  
-
-
-            <li>
-                <span class="nav__menu_reviews">
-                    Отзывы
-                </span>
-            </li>
 
 
             <li>
@@ -114,6 +95,29 @@
                         </span>
                     </li>
                 </ul>
+
+            <li>
+                Цены
+            </li>
+                <ul class='nav__menu_drop decoration__select_none decoration__list_none'>
+                    <li>
+                        <span class="nav__menu_priceServices">
+                            Стоимость услуг
+                        </span>
+                    </li>
+                    <li>
+                        <span class="nav__menu_priceSale">
+                            Акции и скидки
+                        </span>
+                    </li>
+                </ul>  
+
+
+            <li>
+                <span class="nav__menu_reviews">
+                    Отзывы
+                </span>
+            </li>
 
             <li>
                 <span class="nav__menu_contacts">

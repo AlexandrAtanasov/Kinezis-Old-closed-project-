@@ -36,6 +36,10 @@ $(document).ready(function() {
             $id = $(this).attr('id');
             $elemUrl = '/additional/service/' + $id;
             showContent();
+        } else if($(this).hasClass('nav__menu_equipment'))
+        {
+            $elemUrl = '/additional/equipment'
+            showContent();
         } else if($(this).hasClass('nav__menu_reviews'))
         {
             $elemUrl = '/reviews';
@@ -48,7 +52,7 @@ $(document).ready(function() {
         {
             $elemUrl = '/vacancy';
             showContent();
-        }
+        } 
     });
 })
 
