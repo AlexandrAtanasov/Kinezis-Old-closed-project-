@@ -5,7 +5,7 @@
     </div>
 
     <div class="content__article_box">
-        <div class="content__article_elem content__article_licences">
+        <div class="content__article_elem content__article_imagesBox">
             <?php
                 foreach(  $data4 as $row )
                 {

@@ -60,18 +60,18 @@
     background-size: cover;
 }
 
-/* for article's box which contain licences */
-.content__article_licences {
+/* for article's box which contain img for slider */
+.content__article_imagesBox {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-.content__article_licences .content__article_img {
+.content__article_imagesBox .content__article_img {
     min-height: 200px;
     height: 350px;
     width: 20%;
     min-width: 15rem;
 }
-.content__article_licences .content__article_img .content__article_img_licences {
+.content__article_imagesBox .content__article_img .content__article_img_licences {
     background-size: contain;
 }

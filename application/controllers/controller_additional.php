@@ -14,8 +14,8 @@
         } 
         function action_rehab() 
         {
-            $data = $this -> model -> get_data();
-            $this -> view -> generate('rehab_view.php', 'template_view.php', $data);
+            $data2 = $this -> model -> get_data2();
+            $this -> view -> generate('rehab_view.php', 'template_view.php', $data2);
         }
         function action_equipment() 
         {

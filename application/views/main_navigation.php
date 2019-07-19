@@ -56,6 +56,11 @@ include(__DIR__ . '/main_navigation_lists.php' );
                             }
                         ?>
                         <li>
+                            <span class="nav__menu_rehab">
+                                Реабилитационные занятия для инвалидов
+                            </span>
+                        </li>
+                        <li>
                             <span class="nav__menu_equipment">
                                 Продажа тренажёров
                             </span>

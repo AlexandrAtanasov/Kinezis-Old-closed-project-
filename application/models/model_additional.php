@@ -24,6 +24,19 @@
                 FROM `additional_services_list` WHERE id = " . $service  . ";");
             return $result;
         }
+        public function get_data2()
+        {
+            $result = null;
+            $pdo = null;
+            require __DIR__ . '/../core/std_incl.php';
+
+            $pdo->query("SET CHARACTER SET 'utf8'");
+            
+            $result = $pdo->query("SELECT 
+                `Img` 
+                FROM `additional_services_rehabimg`");
+            return $result;
+        }
         public function get_data3()
         {
             $result = null;

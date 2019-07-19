@@ -63,6 +63,11 @@
                         }
                     ?>
                     <li>
+                        <span class="nav__menu_rehab">
+                            Реабилитационные занятия для инвалидов
+                        </span>
+                    </li>
+                    <li>
                         <span class="nav__menu_equipment">
                             Продажа тренажёров
                         </span>
