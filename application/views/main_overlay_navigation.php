@@ -111,6 +111,11 @@
                         </span>
                     </li>
                     <li>
+                        <span class="nav__menu_priceIndividual">
+                            Стоимость индивидуальных занятий   
+                        </span>
+                    </li>
+                    <li>
                         <span class="nav__menu_priceSale">
                             Акции и скидки
                         </span>

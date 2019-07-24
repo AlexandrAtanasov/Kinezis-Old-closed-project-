@@ -17,7 +17,7 @@
     min-width: 15rem;
     align-items: center;
     padding: 1rem;
-    text-align: justify;
+    text-align: left;
 }
 .content__price_servicesTable,
 .content__price_abonementTable,
@@ -68,4 +68,5 @@
 }*/
 .content__prices_info {
     margin-top: 1rem;
+    width: 100%;
 }

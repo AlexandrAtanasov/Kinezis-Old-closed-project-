@@ -34,7 +34,7 @@ nav {
     left: -1rem;
     background: #8FB64C;
     /* background: red; */
-    padding-left: 0.5rem;
+    /* padding-left: 0.5rem; */
     width: 22rem;
     height: fit-content;
     line-height: 2rem;
@@ -45,6 +45,12 @@ nav {
 .nav__menu_drop>li {
     /* display: inline; */
     display: block;
+    padding-left: .5rem;
+}
+.nav__menu_drop>li:hover {
+
+    background-color: #53741A;
+    transition: background-color 0.2s ease;
 }
 /* .nav__menu_drop > li:hover > span::after{
     content: '<-';

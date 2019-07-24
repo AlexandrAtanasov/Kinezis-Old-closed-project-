@@ -77,6 +77,11 @@ include(__DIR__ . '/main_navigation_lists.php' );
                             </span>
                         </li>
                         <li>
+                            <span class="nav__menu_priceIndividual">
+                                Стоимость индивидуальных занятий   
+                            </span>
+                        </li>
+                        <li>
                             <span class="nav__menu_priceSale">
                                 Акции и скидки
                             </span>

@@ -1,6 +1,6 @@
 <?php
 
-    class Model_Price extends Model
+    class Model_Individual extends Model
     {
         public function get_data()
         {
@@ -11,11 +11,10 @@
             $pdo->query("SET CHARACTER SET 'utf8'");
             
             $result = $pdo->query("SELECT 
-            `service`, `duration`, `cost` 
-            FROM cost_services;");
+            `series`, `numb_classes`, `class_duration`, `cost_series` 
+            FROM `cost_individual`;");
             return $result;
         }
-        
         public function get_data2()
         {
             $result = null;
@@ -25,11 +24,10 @@
             $pdo->query("SET CHARACTER SET 'utf8'");
             
             $result2 = $pdo->query("SELECT 
-            `series`, `numb_classes`, `period`, `class_duration`, `cost_series` 
-            FROM cost_abonement;");
+            `numb_classes`, `cost_series` 
+            FROM `cost_individual_athome`;");
             return $result2;
         }
-        
         public function get_data3()
         {
             $result = null;
@@ -39,8 +37,8 @@
             $pdo->query("SET CHARACTER SET 'utf8'");
             
             $result3 = $pdo->query("SELECT 
-            `series`, `numb_classes`, `period`, `class_duration`, `cost_series` 
-            FROM cost_abonement_support;");
+            `numb_classes`, `cost_series` 
+            FROM `cost_individual_rehab`;");
             return $result3;
         }
 

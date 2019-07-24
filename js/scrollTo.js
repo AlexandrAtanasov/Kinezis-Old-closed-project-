@@ -21,6 +21,10 @@ $(document).ready(function() {
             // $elemClass = '.content__price';
             $elemUrl = '/price';
             showContent();
+        } else if($(this).hasClass('nav__menu_priceIndividual'))
+        {
+            $elemUrl = '/Individual';
+            showContent();
         } else if($(this).hasClass('nav__menu_priceSale'))
         {
             // $elemClass = '.content__price_sale';
@@ -38,11 +42,11 @@ $(document).ready(function() {
             showContent();
         } else if($(this).hasClass('nav__menu_rehab'))
         {
-            $elemUrl = '/additional/rehab'
+            $elemUrl = '/additional/rehab';
             showContent();
         } else if($(this).hasClass('nav__menu_equipment'))
         {
-            $elemUrl = '/additional/equipment'
+            $elemUrl = '/additional/equipment';
             showContent();
         } else if($(this).hasClass('nav__menu_reviews'))
         {
