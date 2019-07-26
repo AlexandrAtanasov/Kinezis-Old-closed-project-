@@ -1,8 +1,8 @@
 <!-- set desc and title -->
 <script type="text/javascript">
     $(document).ready(function() {
-        var pageTitle = "Кинезитерапия | Сеть центров кинезитерапии «КИНЕЗИС» в центре Перми, Мотовилихе и Закамске";
-        var pageDescription = "Слово «кинезитерапия» происходит от: «кинезис» — движение и «терапия» — лечение. Инструкторы центра «КИНЕЗИС» подберут комплекс упражнений, позволяющий снять болевой синдром и снизить риск возникновения заболеваний позвоночника и суставов.";
+        var pageTitle = "О центрах | Сеть центров кинезитерапии «КИНЕЗИС» в центре Перми, Мотовилихе и Закамске";
+        var pageDescription = "Медицинский центр кинезитерапии «КИНЕЗИС» на Крупской 31 является клинической базой медицинской академии города Перми. Приём осуществляет врач-кинезитерапевт, врач ЛФК. Занятия ведут инструкторы-методисты.";
         document.title = pageTitle;
         document.querySelector('meta[name="description"]').setAttribute("content", pageDescription);
     });
@@ -11,7 +11,7 @@
 
 <div class="content__article decoration__select_none">
     <div class="headline decoration__select_none">
-        <span>Методология</span>
+        <span>О центрах</span>
     </div>
 
     <div class="content__article_box">
@@ -29,26 +29,22 @@
                                 . ')">
                             </div>
                         </div>
-
                         <div class="content__article_body">
+
                             <span class="content__article_title">
                                 <h1>'
                                 . $row['Title']
                             . ' </h1> 
                             </span>
-                            <span class="content__article_subtitle">
-                                <h2>'
-                                . $row['SubTitle']
-                            . '</h2> </span>
                             <span class="content__article_article">'
                                 . $row['Article']
                             . '</span>
                         </div>
 
                     </div>
-                    ';
+                    '
+                ;
             }
-
         ?>
 
     </div>

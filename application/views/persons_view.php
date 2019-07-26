@@ -1,3 +1,14 @@
+<!-- set desc and title -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        var pageTitle = "Персонал | Сеть центров кинезитерапии «КИНЕЗИС» в центре Перми, Мотовилихе и Закамске";
+        var pageDescription = "«КИНЕЗИС» - центры кинезитерапии в Перми на Екатерининской 165, Крупской 31 и М.Рыбалко 85в. Персонал центров - опытная команда врачей - специалистов по кинезитерапии и инструкторов - методистов. Специалисты центра обучались в Москве по методике профессора Бубновского Сергея Михайловича. Врачи и инструкторы центра регулярно повышают свою квалификацию, посещая  медицинские конференции в городе Пермь и Москва.";
+        document.title = pageTitle;
+        document.querySelector('meta[name="description"]').setAttribute("content", pageDescription);
+    });
+</script>
+<!-- set desc and title -->
+
 <!-- view for persons on a persons page -->
 <div class="content__person decoration__select_none">
     

@@ -97,6 +97,11 @@ include(__DIR__ . '/main_navigation_lists.php' );
                             </span>
                         </li>
                         <li>
+                            <span class="nav__menu_centers">
+                                О центрах
+                            </span>
+                        </li>
+                        <li>
                             <span class="nav__menu_method">
                                 О методике
                             </span>

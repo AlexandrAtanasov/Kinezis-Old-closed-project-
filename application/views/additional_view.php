@@ -29,7 +29,20 @@
                             . '</span>
                         </div>
                             
-                    </div>';
+                    </div>
+                    
+                    <!-- set description and title -->
+                    <script type="text/javascript">
+                        $(document).ready(function() {
+                            var pageTitle = "'. $row['Title'] . ' | Сеть центров кинезитерапии «КИНЕЗИС» в центре Перми, Мотовилихе и Закамске";
+                            var pageDescription = "'. $row['DescriptionText'] . '";
+                            document.title = pageTitle;
+                            document.querySelector(\'meta[name="description"]\').setAttribute("content", pageDescription);
+                        });
+                    </script>
+                    <!-- set description and title -->
+                    
+                    ';
             }
                         
         ?>

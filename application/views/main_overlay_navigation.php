@@ -85,6 +85,11 @@
                         </span>
                     </li>
                     <li>
+                        <span class="nav__menu_centers">
+                            О центрах
+                        </span>
+                    </li>
+                    <li>
                         <span class="nav__menu_method">
                             О методике
                         </span>

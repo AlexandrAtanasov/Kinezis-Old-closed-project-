@@ -11,6 +11,10 @@ $(document).ready(function() {
             // $elemClass = '.content__article';
             $elemUrl = '/article';
             showContent();
+        } else if ($(this).hasClass('nav__menu_centers'))
+        {
+            $elemUrl = '/centers';
+            showContent();
         } else if ($(this).hasClass('nav__menu_contacts'))
         {
             // $elemClass = '.content__contacts';
@@ -23,7 +27,7 @@ $(document).ready(function() {
             showContent();
         } else if($(this).hasClass('nav__menu_priceIndividual'))
         {
-            $elemUrl = '/Individual';
+            $elemUrl = '/individual';
             showContent();
         } else if($(this).hasClass('nav__menu_priceSale'))
         {

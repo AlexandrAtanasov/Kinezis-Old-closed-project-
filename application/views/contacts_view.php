@@ -1,3 +1,14 @@
+<!-- set desc and title -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        var pageTitle = "Контакты | Сеть центров кинезитерапии «КИНЕЗИС» в центре Перми, Мотовилихе и Закамске";
+        var pageDescription = "Адреса и телефоны центров «КИНЕЗИС» в городе Пермь по адресам - Екатерининская 165, Крупской 31, М.Рыбалко 85В. ";
+        document.title = pageTitle;
+        document.querySelector('meta[name="description"]').setAttribute("content", pageDescription);
+    });
+</script>
+<!-- set desc and title -->
+
 <!-- contacts -->
 <div class="content__contacts">
 
@@ -5,11 +16,7 @@
         <span>Контакты</span>
     </div>
 
-
-
     <div class="content__contacts_box">
-        
-
         <div class='content__contacts_elem'>
             <div class="decoration__select_none">
                 <span class="content__contacts_title">Центр "КИНЕЗИС на Екатерининской"</span>
@@ -31,7 +38,6 @@
                 </div>
             </div>
         </div>
-
 
         <div class='content__contacts_elem'>
             <div class="decoration__select_none">
@@ -77,9 +83,6 @@
             </div>
         </div>
         
-        
     </div>
-
-
 
 </div>
