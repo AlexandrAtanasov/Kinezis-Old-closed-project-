@@ -104,6 +104,11 @@
                             Вакансии
                         </span>
                     </li>
+                    <li>
+                        <span class="nav__menu_organizations">
+                            Вышестоящие оганизации
+                        </span>
+                    </li>
                 </ul>
 
             <li>
@@ -127,7 +132,12 @@
                     </li>
                 </ul>  
 
-
+            <li>
+                <span class="nav__menu_news">
+                    Новости
+                </span>
+            </li>
+            
             <li>
                 <span class="nav__menu_reviews">
                     Отзывы

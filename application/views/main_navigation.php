@@ -116,7 +116,18 @@ include(__DIR__ . '/main_navigation_lists.php' );
                                 Вакансии
                             </span>
                         </li>
+                        <li>
+                            <span class="nav__menu_organizations">
+                                Вышестоящие оганизации
+                            </span>
+                        </li>
                     </ul>
+                </li>
+
+                <li>
+                    <span class="nav__menu_news">
+                        Новости
+                    </span>
                 </li>
 
                 <li>
@@ -124,9 +135,6 @@ include(__DIR__ . '/main_navigation_lists.php' );
                         Отзывы
                     </span>
                 </li>
-
-
-                
 
                 <li>
                     <span class="nav__menu_contacts">

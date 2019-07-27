@@ -24,6 +24,11 @@
     padding: 1rem;
     text-align: left;
 }
+.content__article_date
+{
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+}
 /* .content__article_article {
 } */
 .content__article_img {
@@ -71,6 +76,13 @@
     height: 350px;
     width: 20%;
     min-width: 15rem;
+}
+.content__article_imgNews 
+{
+    margin-top: 1rem;
+    min-height: 500px;
+    height: 500px;
+    width: 100%;
 }
 .content__article_imagesBox .content__article_img .content__article_img_licences {
     background-size: contain;

@@ -11,7 +11,7 @@
 
             $result = $pdo->query("SELECT
                 FirstName, LastName, Position, About, Img
-                FROM staff_main_page;");
+                FROM `staff_doctors`;");
             return $result;
         }
         public function get_data2()

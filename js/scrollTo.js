@@ -52,6 +52,10 @@ $(document).ready(function() {
         {
             $elemUrl = '/additional/equipment';
             showContent();
+        } else if($(this).hasClass('nav__menu_news'))
+        {
+            $elemUrl = '/news';
+            showContent();
         } else if($(this).hasClass('nav__menu_reviews'))
         {
             $elemUrl = '/reviews';
@@ -63,6 +67,10 @@ $(document).ready(function() {
         } else if($(this).hasClass('nav__menu_vacancy'))
         {
             $elemUrl = '/vacancy';
+            showContent();
+        } else if($(this).hasClass('nav__menu_organizations'))
+        {
+            $elemUrl = '/organizations';
             showContent();
         } 
     });
