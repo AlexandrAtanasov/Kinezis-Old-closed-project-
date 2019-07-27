@@ -104,6 +104,11 @@
                             Вакансии
                         </span>
                     </li>
+                    <li>
+                        <span class="nav__menu_organizations">
+                            Вышестоящие оганизации
+                        </span>
+                    </li>
                 </ul>
 
             <li>

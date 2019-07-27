@@ -64,6 +64,10 @@ $(document).ready(function() {
         {
             $elemUrl = '/vacancy';
             showContent();
+        } else if($(this).hasClass('nav__menu_organizations'))
+        {
+            $elemUrl = '/organizations';
+            showContent();
         } 
     });
 })
