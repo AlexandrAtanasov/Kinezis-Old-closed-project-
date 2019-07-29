@@ -1,3 +1,14 @@
+<!-- set desc and title -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        var pageTitle = "Правила посещения | Сеть центров кинезитерапии «КИНЕЗИС» в центре Перми, Мотовилихе и Закамске";
+        var pageDescription = "Центр кинезитерапии «КИНЕЗИС». Условия и порядок предоставления услуг. Правила посещения.";
+        document.title = pageTitle;
+        document.querySelector('meta[name="description"]').setAttribute("content", pageDescription);
+    });
+</script>
+<!-- set desc and title -->
+
 <div class="content__article decoration__select_none">
     <div class="headline decoration__select_none">
         <span>Правила посещения Центров "КИНЕЗИС"</span>
