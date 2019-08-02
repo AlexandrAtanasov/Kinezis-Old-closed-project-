@@ -17,7 +17,7 @@
             $pdo->query("SET CHARACTER SET 'utf8'");
             $result = $pdo->query("SELECT 
                 `Title`, `Article`, `Img`, `DescriptionText` 
-                FROM `resolvable_problems_list` WHERE id = " . $problem  . ";");
+                FROM `resolvable_problems_list` WHERE `TitleURL` LIKE '$problem' ;");
             return $result;
         }
     }

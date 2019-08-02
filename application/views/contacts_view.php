@@ -34,7 +34,10 @@
                     <span>г. Пермь, ул. Екатерининская, 165</span>
                 </div>
                 <div>
-                    <a href="tel:83425551212" title="Позвоните нам!"><i class="fas fa-phone"></i>     +7 (342) 555-12-12</a>
+                    <a href="tel:83422447616" title="Позвоните нам!">
+                        <i class="fas fa-phone"></i>     
+                        8-342-244-76-16
+                    </a>
                 </div>
             </div>
         </div>
@@ -56,7 +59,10 @@
                     <span>г. Пермь, ул. Крупской, 31</span>
                 </div>
                 <div>
-                    <a href="tel:83425551313" title="Позвоните нам!"><i class="fas fa-phone"></i>     +7 (342) 555-13-13</a>
+                    <a href="tel:83422657013" title="Позвоните нам!">
+                        <i class="fas fa-phone"></i>
+                        8-342-265-70-13
+                    </a>
                 </div>
             </div>
         </div>
@@ -78,7 +84,10 @@
                     <span>г. Пермь, ул. Маршала Рыбалко, 85В</span>
                 </div>
                 <div>
-                    <a href="tel:83425551414" title="Позвоните нам!"><i class="fas fa-phone"></i>     +7 (342) 555-14-14</a>
+                    <a href="tel:83422009469" title="Позвоните нам!">
+                        <i class="fas fa-phone"></i>
+                        8-342-200-94-69
+                    </a>
                 </div>
             </div>
         </div>

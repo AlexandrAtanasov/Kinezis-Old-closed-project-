@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-    $(this).on("click", "span", function (event) {
+    $(this).on("click", "li", function (event) {
         if ($(this).hasClass('nav__menu_person'))
         {
             // $elemClass = '.content__person';

@@ -21,7 +21,7 @@
             
             $result = $pdo->query("SELECT 
                 `Title`, `Article`, `Img`, `DescriptionText` 
-                FROM `additional_services_list` WHERE id = " . $service  . ";");
+                FROM `additional_services_list` WHERE `TitleURL` LIKE '$service' ;");
             return $result;
         }
         public function get_data2()

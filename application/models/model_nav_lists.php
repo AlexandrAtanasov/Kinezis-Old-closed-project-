@@ -9,7 +9,7 @@
             
             $pdo->query("SET CHARACTER SET 'utf8'");
             $result = $pdo->query("SELECT 
-                `id`, `Title`
+                `Title`, `TitleURL`
                 FROM `additional_services_list`;");
             
             return $result;
@@ -23,7 +23,7 @@
             
             $pdo->query("SET CHARACTER SET 'utf8'");
             $result = $pdo->query("SELECT 
-                `id`, `Title`
+                `Title`, `TitleURL`
                 FROM `resolvable_problems_list`;");
             
             return $result;

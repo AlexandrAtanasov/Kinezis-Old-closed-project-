@@ -28,15 +28,12 @@
             </li>
                 <ul class='nav__menu_drop decoration__select_none decoration__list_none'>
                     <?php
-                        // include ( __DIR__ . '/main_navigation_lists.php' );
                         foreach( $problemsList as $row )
                         {
                             echo
                             '
-                                <li>
-                                    <span class="nav__menu_problems" id="' . $row['id'] . '">'
-                                    . $row['Title']
-                                    . '</span>
+                                <li class="nav__menu_problems" id="' . $row['TitleURL'] . '">
+                                    '. $row['Title'].'
                                 </li>
                             ';
                         }
@@ -49,26 +46,23 @@
             </li>    
                 <ul class='nav__menu_drop decoration__select_none decoration__list_none'>
                     <?php
-                        // include ( __DIR__ . '/main_navigation_lists.php' );
                         foreach( $additionalList as $row )
                         {
                             echo
                             '
-                                <li>
-                                    <span class="nav__menu_additional" id="' . $row['id'] . '">'
-                                    . $row['Title']
-                                    . '</span>
+                                <li class="nav__menu_additional" id="' . $row['TitleURL'] . '">
+                                    '. $row['Title'] .'
                                 </li>
                             ';
                         }
                     ?>
-                    <li>
-                        <span class="nav__menu_rehab">
+                    <li class="nav__menu_rehab">
+                        <span>
                             Реабилитационные занятия для инвалидов
                         </span>
                     </li>
-                    <li>
-                        <span class="nav__menu_equipment">
+                    <li class="nav__menu_equipment">
+                        <span>
                             Продажа тренажёров
                         </span>
                     </li>
@@ -79,33 +73,33 @@
                 О нас
             </li>
                 <ul class='nav__menu_drop decoration__select_none decoration__list_none'>
-                    <li>
-                        <span class="nav__menu_person">
+                    <li class="nav__menu_person">
+                        <span>
                             Наша комманда
                         </span>
                     </li>
-                    <li>
-                        <span class="nav__menu_centers">
+                    <li class="nav__menu_centers">
+                        <span>
                             О центрах
                         </span>
                     </li>
-                    <li>
-                        <span class="nav__menu_method">
+                    <li class="nav__menu_method">
+                        <span>
                             О методике
                         </span>
                     </li>
-                    <li>
-                        <span class="nav__menu_rules">
+                    <li class="nav__menu_rules">
+                        <span>
                             Правила посещения
                         </span>
                     </li>
-                    <li>
-                        <span class="nav__menu_vacancy">
+                    <li class="nav__menu_vacancy">
+                        <span>
                             Вакансии
                         </span>
                     </li>
-                    <li>
-                        <span class="nav__menu_organizations">
+                    <li class="nav__menu_organizations">
+                        <span>
                             Вышестоящие оганизации
                         </span>
                     </li>
@@ -115,37 +109,37 @@
                 Цены
             </li>
                 <ul class='nav__menu_drop decoration__select_none decoration__list_none'>
-                    <li>
-                        <span class="nav__menu_priceServices">
+                    <li class="nav__menu_priceServices">
+                        <span>
                             Стоимость услуг
                         </span>
                     </li>
-                    <li>
-                        <span class="nav__menu_priceIndividual">
+                    <li class="nav__menu_priceIndividual">
+                        <span>
                             Стоимость индивидуальных занятий   
                         </span>
                     </li>
-                    <li>
-                        <span class="nav__menu_priceSale">
+                    <li class="nav__menu_priceSale">
+                        <span>
                             Акции и скидки
                         </span>
                     </li>
                 </ul>  
 
-            <li>
-                <span class="nav__menu_news">
+            <li class="nav__menu_news">
+                <span>
                     Новости
                 </span>
             </li>
             
-            <li>
-                <span class="nav__menu_reviews">
+            <li class="nav__menu_reviews">
+                <span>
                     Отзывы
                 </span>
             </li>
 
-            <li>
-                <span class="nav__menu_contacts">
+            <li class="nav__menu_contacts">
+                <span>
                     Контакты
                 </span>
             </li>

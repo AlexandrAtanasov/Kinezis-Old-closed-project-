@@ -1,0 +1,10 @@
+User-agent: Yandex
+ Allow: *
+ Disallow: */admin
+
+User-agent: *
+ Allow: *
+ Disallow: */admin
+ Host: http://i92157n4.beget.tech/
+ 
+Sitemap: http://i92157n4.beget.tech/sitemap.xml

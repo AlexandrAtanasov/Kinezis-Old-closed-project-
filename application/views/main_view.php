@@ -1,4 +1,4 @@
-<!-- set desc and title -->
+<!--set desc and title -->
 <script type="text/javascript">
     $(document).ready(function() {
         var pageTitle = "«КИНЕЗИС» - Центры кинезитерапии";
@@ -9,7 +9,10 @@
 </script>
 <!-- set desc and title -->
 
+
+
 <?php
+ 
     include(__DIR__ . '/main_view_carousel.php');
     include(__DIR__ . '/../../html/main__content_activities.html');
     include(__DIR__ . '/main_view_persons.php');
