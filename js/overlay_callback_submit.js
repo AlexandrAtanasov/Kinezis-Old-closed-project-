@@ -12,7 +12,7 @@ $(document).ready(function() {
                 var fdata = $(this).serialize();
                 $.ajax({  
                     type: "POST",
-                    url: "/../application/core/mailCall.php", 
+                    url: "/../../application/core/mailCall.php", 
                     data: fdata, 
                     success: function() {  
                         alert("Мы скоро Вам перезвоним!");

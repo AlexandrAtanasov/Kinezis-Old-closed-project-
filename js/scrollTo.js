@@ -9,7 +9,7 @@ $(document).ready(function() {
         } else if ($(this).hasClass('nav__menu_method'))
         {
             // $elemClass = '.content__article';
-            $elemUrl = '/article';
+            $elemUrl = '/methodology';
             showContent();
         } else if ($(this).hasClass('nav__menu_centers'))
         {
@@ -46,11 +46,13 @@ $(document).ready(function() {
             showContent();
         } else if($(this).hasClass('nav__menu_rehab'))
         {
-            $elemUrl = '/additional/rehab';
+            // $elemUrl = '/additional/rehab';
+            $elemUrl = '/additional/service/reabilitacionnye-zanyatiya-dlya-invalidov';
             showContent();
         } else if($(this).hasClass('nav__menu_equipment'))
         {
-            $elemUrl = '/additional/equipment';
+            // $elemUrl = '/additional/equipment';
+            $elemUrl = '/additional/service/prodazha-trenazherov';
             showContent();
         } else if($(this).hasClass('nav__menu_news'))
         {

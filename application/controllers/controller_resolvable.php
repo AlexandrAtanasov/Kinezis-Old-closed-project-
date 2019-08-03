@@ -8,12 +8,6 @@
             $this -> view = new View();
         }
 
-        // function action_index()
-        // {
-        //     $data = $this -> model -> get_data();
-        //     $this -> view -> generate('resolvable_view.php', 'template_view.php', $data);
-        // }
-
         function action_problem()
         {
             $data = $this -> model -> get_data();

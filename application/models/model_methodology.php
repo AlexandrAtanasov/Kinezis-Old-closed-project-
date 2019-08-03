@@ -1,6 +1,6 @@
 <?php
 
-    class Model_Article extends Model
+    class Model_Methodology extends Model
     {
         public function get_data()
         {
