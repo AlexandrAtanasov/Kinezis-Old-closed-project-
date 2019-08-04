@@ -1,14 +1,3 @@
-<!-- set desc and title -->
-<script type="text/javascript">
-    $(document).ready(function() {
-        var pageTitle = "О центрах | Сеть центров кинезитерапии «КИНЕЗИС» в центре Перми, Мотовилихе и Закамске";
-        var pageDescription = "Медицинский центр кинезитерапии «КИНЕЗИС» на Крупской 31 является клинической базой медицинской академии города Перми. Приём осуществляет врач-кинезитерапевт, врач ЛФК. Занятия ведут инструкторы-методисты.";
-        document.title = pageTitle;
-        document.querySelector('meta[name="description"]').setAttribute("content", pageDescription);
-    });
-</script>
-<!-- set desc and title -->
-
 <div class="content__article decoration__select_none">
     <div class="headline decoration__select_none">
         <span>О центрах</span>

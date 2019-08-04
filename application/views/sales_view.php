@@ -1,14 +1,3 @@
-<!-- set desc and title -->
-<script type="text/javascript">
-    $(document).ready(function() {
-        var pageTitle = "Акции и скидки | Сеть центров кинезитерапии «КИНЕЗИС» в центре Перми, Мотовилихе и Закамске";
-        var pageDescription = "Центр кинезитерапии «КИНЕЗИС». Скидки пенсионерам, школьникам. Акции и скидки на занятия кинезитерапией.";
-        document.title = pageTitle;
-        document.querySelector('meta[name="description"]').setAttribute("content", pageDescription);
-    });
-</script>
-<!-- set desc and title -->
-
 <div class="content__sale decoration__select_none">
 
     <div class="headline decoration__select_none">

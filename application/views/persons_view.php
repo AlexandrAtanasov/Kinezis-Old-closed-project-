@@ -1,14 +1,3 @@
-<!-- set desc and title -->
-<script type="text/javascript">
-    $(document).ready(function() {
-        var pageTitle = "Персонал | Сеть центров кинезитерапии «КИНЕЗИС» в центре Перми, Мотовилихе и Закамске";
-        var pageDescription = "«КИНЕЗИС» - центры кинезитерапии в Перми. Персонал центров - опытная команда врачей - специалистов по кинезитерапии и инструкторов - методистов. Специалисты центра обучались в Москве по методике профессора Бубновского Сергея Михайловича.";
-        document.title = pageTitle;
-        document.querySelector('meta[name="description"]').setAttribute("content", pageDescription);
-    });
-</script>
-<!-- set desc and title -->
-
 <!-- view for persons on a persons page -->
 <div class="content__person decoration__select_none">
     

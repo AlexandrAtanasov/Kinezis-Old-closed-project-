@@ -1,14 +1,3 @@
-<!-- set desc and title -->
-<!-- <script type="text/javascript">
-    $(document).ready(function() {
-        var pageTitle = "Новости | Сеть центров кинезитерапии «КИНЕЗИС» в центре Перми, Мотовилихе и Закамске";
-        var pageDescription = "Новости сети центров кинезитерапии «КИНЕЗИС» в городе Пермь.";
-        document.title = pageTitle;
-        document.querySelector('meta[name="description"]').setAttribute("content", pageDescription);
-    });
-</script> -->
-<!-- set desc and title -->
-
 <div class="content__article decoration__select_none">
     <div class="headline decoration__select_none">
         <span>Новости</span>

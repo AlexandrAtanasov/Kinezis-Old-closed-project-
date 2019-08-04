@@ -11,7 +11,7 @@
             $pdo->query("SET CHARACTER SET 'utf8'");
             
             $result = $pdo->query("SELECT
-                `Date`, `Header`, `Article`, `Img`, `Img2`, `Img3`, `PageTitle`, `PageDesc`
+                `Date`, `Header`, `Article`, `Img`, `Img2`, `Img3`
             FROM `news` ORDER BY `id` DESC;");
             return $result;
         }

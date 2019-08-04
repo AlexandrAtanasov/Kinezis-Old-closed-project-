@@ -1,13 +1,3 @@
-<!-- set desc and title -->
-<script type="text/javascript">
-    $(document).ready(function() {
-        var pageTitle = "Стоимость услуг | Сеть центров кинезитерапии «КИНЕЗИС» в центре Перми, Мотовилихе и Закамске";
-        var pageDescription = "Стоимость занятий кинезитерапией в Перми. Стоимость основной лечебной программы. Стоимость поддерживающей программы. ";
-        document.title = pageTitle;
-        document.querySelector('meta[name="description"]').setAttribute("content", pageDescription);
-    });
-</script>
-<!-- set desc and title -->
 <div class="content__price decoration__select_none">
     
     <div class="headline decoration__select_none">

@@ -1,14 +1,3 @@
-<!-- set desc and title -->
-<script type="text/javascript">
-    $(document).ready(function() {
-        var pageTitle = "Кинезитерапия | Сеть центров кинезитерапии «КИНЕЗИС» в центре Перми, Мотовилихе и Закамске";
-        var pageDescription = "Слово «кинезитерапия» происходит от: «кинезис» — движение и «терапия» — лечение. Инструкторы центра «КИНЕЗИС» подберут комплекс упражнений, позволяющий снять болевой синдром и снизить риск возникновения заболеваний позвоночника и суставов.";
-        document.title = pageTitle;
-        document.querySelector('meta[name="description"]').setAttribute("content", pageDescription);
-    });
-</script>
-<!-- set desc and title -->
-
 <div class="content__article decoration__select_none">
     <div class="headline decoration__select_none">
         <span>Методология</span>
