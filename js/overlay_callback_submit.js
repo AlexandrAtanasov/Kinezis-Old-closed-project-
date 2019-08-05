@@ -11,18 +11,20 @@ $(document).ready(function() {
                 var thisForm = this;
                 var fdata = $(this).serialize();
                 $.ajax({  
-                    type: "POST",
-                    url: "/../../application/core/mailCall.php", 
-                    data: fdata, 
-                    success: function() {  
-                        alert("Мы скоро Вам перезвоним!");
-                    },
-                    error: function() {
-                        alert('Ошибка заполнения данных');
-                    } 
-                }).done(function() {
-                    thisForm.reset();
-                });
+                    method: "POST",
+                    url: "/sendform", 
+                    data: fdata,
+                }).done(function(data) {  
+                        alert(data + ", мы скоро Вам перезвоним!");
+                        thisForm.reset();
+                }).fail(function() {
+                    alert('Ошибка заполнения данных');
+                }); 
+                // });
+                    // }).done(function() {
+                    //     thisForm.reset();
+                // success: function() {  
+                // error: function() {
                 return false;
             };
         }
