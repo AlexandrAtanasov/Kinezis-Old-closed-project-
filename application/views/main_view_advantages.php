@@ -10,13 +10,6 @@
                echo 
                     '<div class="content__person_elem">
                     
-                        <div class="content__person_img">
-                            <div class="content__person_img_elem" style="background-image: url(' 
-                                . $row['Img'] .
-                            ')">
-                            </div>
-                        </div>
-                    
                         <div class="content__person_info">
                             <span class="content__person_fio">'
                                 . $row['Title'] .

@@ -21,10 +21,8 @@
                         <div class="content__person_info">
                             <span class="content__person_fio">'
                                 . $row['FirstName'] . ' '
-                                . $row['LastName'] . ' ' 
-                                . '- ' 
-                                . $row['Position'] . 
-                            '</span> 
+                                . $row['LastName'] . ' 
+                            </span> 
                             <p>' 
                                 . $row['About'] . 
                             '</p>

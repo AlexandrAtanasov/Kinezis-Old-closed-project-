@@ -1,12 +1,16 @@
 .content__article_carousel {
     height: 60vh;
+    width: 100%;
+    min-height: 500px;
+    margin: 0 1rem 1rem 1rem;
+    padding: 0;
 }
 .content__elem_carousel {
-    width: 80%;
-    background-size: contain;
+    width: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: inherit;
+    height: 100%;
 }
 
 .content__elem_carousel_hide {

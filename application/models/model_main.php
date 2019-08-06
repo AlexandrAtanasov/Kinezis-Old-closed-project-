@@ -10,8 +10,23 @@
             $pdo->query("SET CHARACTER SET 'utf8'");
 
             $result = $pdo->query("SELECT
-                FirstName, LastName, Position, About, Img
-                FROM `staff_doctors`;");
+                FirstName, LastName, About, Img
+                FROM `staff_doctors` WHERE id < 3
+                UNION
+                SELECT
+                FirstName, LastName, About, Img
+                FROM `staff_senior_instructors` WHERE id < 3
+                UNION
+                SELECT
+                FirstName, LastName, About, Img
+                FROM `staff_instructors` WHERE id < 3
+                UNION
+                SELECT
+                FirstName, LastName, About, Img
+                FROM `staff_administrators` WHERE id < 3
+                
+                
+                ;");
             return $result;
         }
         public function get_data2()
