@@ -17,13 +17,31 @@
     flex-direction: column;
     background:	#717171;
     margin: 0 0.5rem 1rem 0.5rem;
-    width: 20%;
-    min-width: 15rem;
+    width: 18%;
+    min-width: 13rem;
     align-items: center;
     /* for big screen */
     /* min-width: max-content;  */
     /* for mobile screen */
     /* max-width: min-content; */
+    transition: all .1s linear;
+}
+.content__person_elem_doctors 
+{
+    height: fit-content;
+}
+.content__person_elem:hover
+{
+    box-shadow: 0 12px 24px rgba(0,0,0,.35), 0 12px 16px rgba(0,0,0,.35);
+    transform: scale(1.01);
+    transition: all .1s linear;
+}
+.content__person_elem:hover .content__person_review {
+    display: block;
+}
+p.content__person_review
+{
+    display: none;
 }
 .content__person_img {
     background: white;

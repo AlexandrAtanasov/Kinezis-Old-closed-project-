@@ -1,7 +1,7 @@
 <!-- view for persons for a main page -->
 <div class="content__person decoration__select_none">
     <div class="headline decoration__select_none">
-        <span>Наша комманда</span>
+        <span>Наша команда</span>
     </div>
 
     <div class="content__person_box">
@@ -9,7 +9,7 @@
             foreach ( $data as $row )
             {
                echo 
-                    '<div class="content__person_elem">
+                    '<div class="content__person_elem content__person_elem_doctors">
                     
                         <div class="content__person_img">
                             <div class="content__person_img_elem" style="background-image: url(' 
@@ -23,8 +23,11 @@
                                 . $row['FirstName'] . ' '
                                 . $row['LastName'] . ' 
                             </span> 
-                            <p>' 
+                            <p class="content__person_review">' 
                                 . $row['About'] . 
+                            '</p> <br/>
+                            <p class="content__person_review">' 
+                                . $row['Review'] . 
                             '</p>
                         </div> 
 

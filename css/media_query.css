@@ -1,19 +1,19 @@
 /* media layout */
 @media screen and (min-width: 1920px) {
     body {
-        width: 60vw;
+        width: 80%;
     }
     .mainDiv {
         /* max-width: 1280px; */
         margin: 0 auto;
     }
     .fixedNav {
-        width: 60vw;
+        width: 80%;
         min-width: inherit;
         max-width: inherit;
     }
     .scroll__menu_element_fix {
-        width: 60vw; 
+        width: 80%; 
     }
 }
 @media screen and (min-width: 1500px) and (max-width: 1919px) {
@@ -22,13 +22,13 @@
     }
     .mainDiv {
         min-width: 1040px;
-        max-width: 1280px;
+        /* max-width: 1280px; */
         margin: 0 auto;
     }
     .fixedNav {
         width: 80%;
         min-width: inherit;
-        max-width: 1280px;
+        max-width: inherit;
     }
     .scroll__menu_element_fix {
         width: 80%; 
@@ -38,7 +38,7 @@
     body {
         width: 90%;
         min-width: 1040px;
-        max-width: 1280px;
+        /* max-width: 1280px; */
     }
     .mainDiv {
         width: inherit;
@@ -191,6 +191,10 @@
         margin-top: 6rem;
         height: 100%;
         width: 100%;
+    }
+    .content__person_elem {
+        width: 30%;
+        min-width: 13rem;
     }
     .content__article_carousel {
         height: 40vh;
