@@ -19,11 +19,8 @@
     margin: 0 0.5rem 1rem 0.5rem;
     align-items: center;
     height: 15rem;
-    min-width: 15rem;
-    /* for big screen */
-    width: 20%;
-    /* for mobile screen */
-    /* max-width: min-content; */
+    min-width: 12rem;
+    width: 18%;
 }
 .content__activities_img img {
     justify-content: center;

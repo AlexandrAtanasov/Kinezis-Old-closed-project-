@@ -16,7 +16,7 @@ header{
     grid-template-columns: repeat(5, 1fr);
     grid-auto-rows: minmax(0, auto);
     grid-template-areas:
-        "hlb hlb hab htb hcb";
+        "hlb hlb hab hab hcb";
 }
 .header__logo_box {
     grid-area: hlb;
@@ -33,18 +33,18 @@ header{
     grid-area: hab;
     position: relative;
 }
-.header__timetable_box {
+/* .header__timetable_box {
     grid-area: htb;
     position: relative;
-}
+} */
 .header__address_box > .header__address_list {
     height: 9rem;
-    width: 13.5rem;
+    width: fit-content;
 }
-.header__timetable_box > .header__timetable_text {
+/* .header__timetable_box > .header__timetable_text {
     height: 7rem;
     width: 10rem;
-}
+} */
 .header__address_box > .header__address_list,
 .header__timetable_box > .header__timetable_text {
     position: absolute;    

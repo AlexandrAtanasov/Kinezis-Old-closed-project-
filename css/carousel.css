@@ -1,12 +1,12 @@
 .content__article_carousel {
-    height: 60vh;
-    width: 100%;
-    min-height: 500px;
+    /* height: 60vh; */
+    /* width: 100%; */
+    /* min-height: 500px; */
     margin: 0 1rem 1rem 1rem;
     padding: 0;
 }
 .content__elem_carousel {
-    width: 100%;
+    /* width: 100%; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

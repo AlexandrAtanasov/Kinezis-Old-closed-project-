@@ -3,19 +3,26 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
-html, body {
+html, body 
+{
     height: 100%;
 }
-body {
+body 
+{
     margin: 0 auto;
     padding: 0;
     width: 60vw;
     /* min-width: 1040px; */
     /* height: auto; */
     /* min-width: 320px; */
-    /* overflow: hidden; */
+    overflow: unset;
 }
-body, input, textarea {
+.body_overflow
+{
+    overflow: hidden;
+}
+body, input, textarea 
+{
     font-family: "Open Sans";
     font-size: 1em;
 }

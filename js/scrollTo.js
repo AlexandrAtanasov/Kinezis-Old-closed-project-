@@ -6,6 +6,10 @@ $(document).ready(function() {
             // $elemClass = '.content__person';
             $elemUrl = '/persons';
             showContent();
+        } else if ($(this).hasClass('nav__menu_main'))
+        {
+            $elemUrl = '/';
+            showContent();
         } else if ($(this).hasClass('nav__menu_method'))
         {
             // $elemClass = '.content__article';

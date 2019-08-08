@@ -15,6 +15,14 @@
     .scroll__menu_element_fix {
         width: 80%; 
     }
+    .content__article_carousel {
+        height: 60vh;
+        width: 100%;
+        min-height: 500px;
+    }
+    .content__elem_carousel {
+        width: 100%;
+    }
 }
 @media screen and (min-width: 1500px) and (max-width: 1919px) {
     body {
@@ -32,6 +40,14 @@
     }
     .scroll__menu_element_fix {
         width: 80%; 
+    }
+    .content__article_carousel {
+        height: 60vh;
+        width: 100%;
+        min-height: 500px;
+    }
+    .content__elem_carousel {
+        width: 100%;
     }
 }
 @media screen and (min-width: 1281px) and (max-width: 1499px) {
@@ -51,6 +67,14 @@
     }
     .scroll__menu_element_fix {
         width: 90%; 
+    }
+    .content__article_carousel {
+        height: 60vh;
+        width: 100%;
+        min-height: 500px;
+    }
+    .content__elem_carousel {
+        width: 100%;
     }
 }
 @media screen and (min-width: 1131px) and (max-width: 1280px) {
@@ -76,10 +100,18 @@
         height: 3.5rem;
     }
     .header__address_box > .header__address_list {
-        width: 13.1rem;
+        width: fit-content;
     }
     .header__logo_text {
         padding: 0 0.5rem 0 0.5rem;
+    }
+    .content__article_carousel {
+        height: 60vh;
+        width: 100%;
+        min-height: 500px;
+    }
+    .content__elem_carousel {
+        width: 100%;
     }
 }
 @media screen and (min-width: 911px) and (max-width: 1130px) {
@@ -201,6 +233,11 @@
     }
     .content__elem_carousel {
         width: 100%;
+    }
+    .content__activities_elem 
+    {
+        min-width: 11rem;
+        width: 18%;
     }
 }
 @media screen and (min-width: 401px) and (max-width: 910px) {
@@ -350,7 +387,7 @@
     }
     .content__person_elem 
     {
-        width: 47%;
+        width: 95%;
         min-width: 0;
         height: auto;
         margin: 0 .2rem 1rem;
@@ -438,10 +475,13 @@
         height: 2rem;
     }
     .content__article_carousel {
-        height: 40vh;
+        /* height: 40vh; */
+        position: relative;
+        width: 100%;
     }
     .content__elem_carousel {
         width: 100%;
+        padding-top: 100%;
     }
 }
 @media screen and (max-width: 400px) {
@@ -562,10 +602,20 @@
         height: 100%;
         width: 100%;
     }
-    .content__activities_elem, 
     .content__person_elem
     {
         width: 100%;
+        height: auto;
+    }
+    .content__activities_img img 
+    {
+        width: 6rem;
+        height: 6rem;
+    }
+    .content__activities_elem {
+        margin: 0 .25rem 0.5rem;
+        min-width: 8rem;
+        width: 47%;
         height: auto;
     }
     .content__person_elem {
@@ -665,9 +715,12 @@
         height: 2rem;
     }
     .content__article_carousel {
-        height: 40vh;
+        /* height: 40vh; */
+        position: relative;
+        width: 100%;
     }
     .content__elem_carousel {
         width: 100%;
+        padding-top: 100%;
     }
 }

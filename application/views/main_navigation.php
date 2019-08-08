@@ -7,9 +7,9 @@ include(__DIR__ . '/main_navigation_lists.php' );
         
         <div class="nav_container">
             <ul class="nav__menu_list decoration__list_none decoration__select_none decoration__link">
-                
-                <li>
-                    <a href="/">Главная</a>
+            
+                <li class="nav__menu_main">
+                    <span>Главная</span>
                 </li>
 
 
