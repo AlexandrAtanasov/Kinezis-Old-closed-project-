@@ -5,6 +5,14 @@
     height: 100%;
     filter: blur(15px);
 }
+.overlay__blur_hidden
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    filter: blur(15px);
+    overflow-y: hidden;
+}
 .overlay__blur {
     display: block;
     max-width: inherit;
@@ -119,5 +127,9 @@
     box-shadow: 0 0 0 2px #8FB64C;
     transition: border-color 0.5s ease 0.1s,
                 box-shadow 0.5s ease 0.1s;
+}
+.g-recaptcha>div
+{
+    margin: auto;
 }
 

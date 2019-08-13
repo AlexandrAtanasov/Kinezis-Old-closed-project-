@@ -19,6 +19,15 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="//code.jivosite.com/widget.js" jv-id="Hv4SlCa4Xd" async></script>
+    
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('recaptcha_element', {
+          'sitekey' : '6Leg3bIUAAAAADlFcG2RhVNDy7MC7KtRIfWr2Z-j'
+        });
+      };
+    </script> -->
 
 </head>
 <body>

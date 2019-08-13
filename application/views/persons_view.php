@@ -9,28 +9,32 @@
             foreach( $data as $row )
             {
                echo 
-                    '<div class="content__person_elem">
+        
+                    '
+                    <div class="content__person_elem content__person_elem_doctors">
                     
                         <div class="content__person_img">
                             <div class="content__person_img_elem" style="background-image: url(' 
-                            . $row['Img'] 
-                            . ')">
+                                . $row['Img'] .
+                            ')">
                             </div>
                         </div>
                     
                         <div class="content__person_info">
                             <span class="content__person_fio">'
                                 . $row['FirstName'] . ' '
-                                . $row['LastName'] . ' ' 
-                                . '- ' 
-                                . $row['Position'] . 
-                            '</span> 
+                                . $row['LastName'] . ' 
+                            </span> 
                             <p>' 
                                 . $row['About'] . 
+                            '</p> <br/>
+                            <p>' 
+                                . $row['Review'] . 
                             '</p>
                         </div> 
 
-                    </div>';
+                    </div>
+                    ';
             }
 
         ?>

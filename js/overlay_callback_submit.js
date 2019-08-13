@@ -15,7 +15,7 @@ $(document).ready(function() {
                     url: "/sendform", 
                     data: fdata,
                 }).done(function(data) {  
-                        alert(data + ", мы скоро Вам перезвоним!");
+                        alert(data );
                         thisForm.reset();
                 }).fail(function() {
                     alert('Ошибка заполнения данных');

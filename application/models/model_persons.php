@@ -11,7 +11,7 @@
             $pdo->query("SET CHARACTER SET 'utf8'");
             
             $result = $pdo->query("SELECT
-                FirstName, LastName, Position, About, Img
+                FirstName, LastName, Position, About, Img, Review
                 FROM `staff_doctors`;");
             return $result;
         }

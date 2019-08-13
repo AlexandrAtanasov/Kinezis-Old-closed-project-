@@ -22,7 +22,7 @@ document.addEventListener(
                             setTimeout(function hide(){
                                 document.querySelector(".content__elem_carousel").classList.remove("content__elem_carousel_show");
                                 document.querySelector(".content__elem_carousel").classList.add("content__elem_carousel_hide");
-                            }, 3450)
+                            }, 3500)
                             changeBackground = setTimeout(change, 4000);
                         }, 4);
                 } else
