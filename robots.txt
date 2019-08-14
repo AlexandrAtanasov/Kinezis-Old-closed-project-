@@ -5,6 +5,6 @@ User-agent: Yandex
 User-agent: *
  Allow: *
  Disallow: */admin
- Host: http://http://travelingthrough.space/
+ Host: https://travelingthrough.space/
  
-Sitemap: http://http://travelingthrough.space/sitemap.xml
+Sitemap: https://http://travelingthrough.space/sitemap.xml

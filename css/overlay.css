@@ -96,7 +96,8 @@
 }
 .overlay__content_callbackForm {
     width: 25rem;
-    min-width: max-content;
+    max-width: 90vw;
+    /* min-width: max-content; */
     height: fit-content;
     position: fixed;
     left: 50%;
@@ -131,5 +132,12 @@
 .g-recaptcha>div
 {
     margin: auto;
+}
+.overlay__content_politica
+{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-size: 0.9em;
 }
 

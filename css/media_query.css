@@ -602,6 +602,9 @@
         height: 100%;
         width: 100%;
     }
+    .overlay__content_politica {
+        font-size: .7em;
+    }
     .content__person_elem
     {
         width: 100%;
