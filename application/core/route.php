@@ -25,6 +25,14 @@
                 $action_name = $routes[2];
             };
 
+            //yandex direct exception
+            $yandexReg = '/.?yclid=/m';
+            if (!empty($routes[1]) && (preg_match($yandexReg, $routes[1]) )) 
+            {
+                $controller_name = 'Main';
+                $action_name = 'index';
+            };
+
             // set prefixes
             $model_name = 'Model_' . $controller_name;
             $controller_name = 'Controller_' . $controller_name;

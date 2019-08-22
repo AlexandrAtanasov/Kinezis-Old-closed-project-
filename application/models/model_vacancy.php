@@ -10,7 +10,7 @@
             
             $result = $pdo->query("SELECT
                 Title, Article 
-            FROM vacancy;");
+            FROM vacancy ORDER BY `id` DESC;");
             return $result;
         }
     }

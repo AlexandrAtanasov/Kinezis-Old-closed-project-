@@ -41,7 +41,7 @@
     </div>
 
     <div class="headline decoration__select_none">
-        <span>Наши старшие инструктора</span>
+        <span>Наши старшие инструкторы</span>
     </div>
     <div class="content__person_box">
         <?php
@@ -74,7 +74,7 @@
     </div>
 
     <div class="headline decoration__select_none">
-        <span>Наши инструктора</span>
+        <span>Наши инструкторы</span>
     </div>
     <div class="content__person_box">
         <?php

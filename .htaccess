@@ -1,6 +1,48 @@
-RewriteEngine On
+RewriteEngine On 
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+Redirect 301 /artrit.html /resolvable/problem/artrit
+Redirect 301 /artroz.html /resolvable/problem/artroz
+Redirect 301 /osteohondroz.html /resolvable/problem/osteohondroz
+Redirect 301 /skolioz.html /resolvable/problem/scolioz
+Redirect 301 /ploskostopie.html /resolvable/problem/ploskostopie
+Redirect 301 /grizha_pozvonochnika.html /resolvable/problem/gryzha-pozvonochnika
+Redirect 301 /lechenie_spini.html /resolvable/problem/boli-v-spine
+Redirect 301 /golovnye-boli-i-golovokruzheniya.html /resolvable/problem/golovnie-boli-i-golovokruzheniya
+Redirect 301 /profilaktika.html /resolvable/problem/profilaktika-zabolevanij
+Redirect 301 /zanyatiya-dlya-pozhilykh-lyudey.html /resolvable/problem/zanyatiya-dlya-pozhilyh-lyudej
+Redirect 301 /reabilitaciya-posle-yendoprotezirovan.html /resolvable/problem/reabilitaciya-posle-endoprotezirovaniya
+Redirect 301 /vosstanovlenie-posle-insulta.html /resolvable/problem/reabilitaciya-posle-insulta
+Redirect 301 /profilaktika-izbytochnogo-vesa.html /resolvable/problem/profilaktika-izbytochnogo-vesa
+Redirect 301 /zhenskoe-i-muzhskoe-zdorove.html /resolvable/problem/zhenskoe-zdorovie
+Redirect 301 /narushenie-osanki.html /resolvable/problem/narusheniya-osanki
+Redirect 301 /vosstanovlenie-posle-kompressionnykh.html /resolvable/problem/vosstanovlenie-posle-kompressionnyh-perelomov
+Redirect 301 /korrekciya-figury.html /
+Redirect 301 /children-programms.html /additional/service/kineziterapiya-dlya-detej-doshkolnogo-vozrasta
+Redirect 301 /normalizaciya-arterialnogo-davleniya.html /
+
+Redirect 301 /kineziteypirovanie.html /additional/service/kinezitejpirovanie
+Redirect 301 /lechenie-na-domu.html /additional/service/lechenie-na-domu
+Redirect 301 /kineziterapiya-dlya-detey-doshkolnogo.html /additional/service/kineziterapiya-dlya-detej-doshkolnogo-vozrasta
+Redirect 301 /reabilitacionnye-zanyatiya-dlya-invali.html /additional/service/reabilitacionnye-zanyatiya-dlya-invalidov
+Redirect 301 /prodazha-trenazherov.html /additional/service/prodazha-trenazherov
+
+Redirect 301 /about.html /methodology
+Redirect 301 /o-centrakh.html /centers
+Redirect 301 /normativnaya-dokumentaciya.html /organizations
+Redirect 301 /personal-2.html /persons
+Redirect 301 /vakansii.html /vacancy
+
+Redirect 301 /ceny.html /price
+
+Redirect 301 /novosti.html /news
+
+Redirect 301 /otzyvy.html /reviews
+
+Redirect 301 /contact.html /contacts
+
+
 RewriteCond %(REQUEST_FILENAME) !-f
 RewriteCond %(REQUEST_FILENAME) !-d
 RewriteRule .* index.php [L]

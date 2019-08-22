@@ -5,6 +5,6 @@ User-agent: Yandex
 User-agent: *
  Allow: *
  Disallow: */admin
- Host: https://travelingthrough.space/
+ Host: https://kinezis59.ru/
  
-Sitemap: https://http://travelingthrough.space/sitemap.xml
+Sitemap: https://kinezis59.ru/sitemap.xml
