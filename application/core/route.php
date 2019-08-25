@@ -73,10 +73,19 @@
 
         static function ErrorPage404()
         {
-            $host = 'http://'.$_SERVER['HTTP_HOST'] . '/';
-            header('HTTP/1.1 404 Not Found');
-                header('Status: 404 Not Found');
-                header('Location' . $host . '404');
+            $controller_name = 'Controller_404';
+            $action_name = 'action_' . 'index';
+            $controller_file = strtolower($controller_name) . '.php';
+            $controller_path = 'application/controllers/' . $controller_file;
+            include 'application/controllers/' . $controller_file;
+            $controller = new $controller_name;
+            $action = $action_name;
+            $controller->$action();
+
+            // $host = 'http://'.$_SERVER['HTTP_HOST'] . '/';
+            // header('HTTP/1.1 404 Not Found');
+            //     header('Status: 404 Not Found');
+            //     header('Location' . $host . '404');
         }
     }
 
