@@ -43,6 +43,14 @@ Redirect 301 /otzyvy.html /reviews
 Redirect 301 /contact.html /contacts
 
 
+RedirectMatch 302 \/resolvable\/problem\/(.*)\/.*$ /resolvable/problem/$1
+RedirectMatch 302 \/additional\/service\/(.*)\/.*$ /additional/service/$1
+RedirectMatch 302 \/personalpos\/.*$ /persons
+
+RedirectMatch 302 \/clients\.html.* /
+Redirect 301 /massazh.html /
+
+
 RewriteCond %(REQUEST_FILENAME) !-f
 RewriteCond %(REQUEST_FILENAME) !-d
 RewriteRule .* index.php [L]

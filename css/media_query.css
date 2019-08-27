@@ -552,6 +552,10 @@
     .overlay__content_callbackForm {
         width: 100%;
         min-width: 100%;
+        position: absolute;
+        overflow-y: auto;
+        margin-top: 20vh;
+        margin-bottom: 20vh;
     }
     .overlay__menu_nav .nav__menu_list>li,
     .nav__menu_drop>li {
@@ -604,6 +608,13 @@
     }
     .overlay__content_politica {
         font-size: .7em;
+    }
+    .overlay__content_form_adresses
+    {
+        width: 80%;
+        margin: auto;
+        padding-top: 0;
+        padding-bottom: 0.5rem;
     }
     .content__person_elem
     {

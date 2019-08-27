@@ -11,26 +11,32 @@
     <div class="overlay__content_callbackForm">
         <div class="overlay__content_form">
             <form method='post' target="blank" action='' class="overlay__content_form_elem">
-                <!-- <fieldset> -->
-                    <legend class="overlay__content_form_title decoration__select_none">Оставьте свои данные и мы Вам перезвоним!<legend><br>
-                    <!-- <span class="overlay__content_form_text">Как Ваше имя?<span><br> -->
-                    <input type='text' name='name' placeholder='Ваше имя' class="form__input_field_name"><br>
-                    <!-- <span class="overlay__content_form_text">На какой номер Вам перезвонить?</span><br> -->
+                    <legend class="overlay__content_form_title decoration__select_none">Оставьте свои данные и мы Вам перезвоним!</legend>
+                    <br/>
 
-                    <!-- TODO: добавить регулярные выражения для проверки -->
+                    <input type='text' name='name' placeholder='Ваше имя' class="form__input_field_name">
+                    <br/>
                     
-                    <input type='tel' name='number' placeholder='Ваш номер телефона' class="form__input_field_number"><br>
+                    <input type='tel' name='number' placeholder='Ваш номер телефона' class="form__input_field_number">
+                    <br/>
                     
+                    <legend class="overlay__content_form_title decoration__select_none">Выберите ближайший центр:</legend>
+                    <div class="overlay__content_form_adresses">
+                        <p><input class="overlay__content_form_radio" type="radio" name="center" value="Крупской, 31" id="Krupskoy"><label for="Krupskoy" class="overlay__content_form_radio">Крупской, 31</label></p>
+                        <p><input class="overlay__content_form_radio" type="radio" name="center" value="Екатерининская, 165" id="Ekaterininskaya"><label for="Ekaterininskaya" class="overlay__content_form_radio">Екатерининская, 165</label></p>
+                        <p><input class="overlay__content_form_radio" type="radio" name="center" value="Маршала Рыбалко, 85В" id="MRybalko"><label for="MRybalko" class="overlay__content_form_radio">Маршала Рыбалко, 85В</label></p>
+                    </div>
+
                     <div class="g-recaptcha" data-sitekey="6Leg3bIUAAAAADlFcG2RhVNDy7MC7KtRIfWr2Z-j"></div>
                     <br/>
                     
                     <input type='submit' name='enter' value='Перезвоните мне!' class="form__input_submit"><br>
-                    <!-- </fieldset> -->
                     <br/>
             </form>
 
         </div>
-
+        
+        <br/>
         <p class="overlay__content_politica">
             Нажимая на кнопку, вы даете согласие на обработку своих персональных данных в соответствие с 
             <a href="/../../download/Politika-v-otnoshenii-obrabotki-personalnykh-dannykh-OOO-KINEZIS.pdf" class='download__link_visitingRules'>

@@ -32,6 +32,11 @@
     color: white;
     z-index: 9997;
 }
+.overlay__content_container
+{
+    position: absolute;
+    overflow-y: auto;
+}
 .overlay__menu_container.overlay__mobile {
     position: absolute;
     width: 100%;
@@ -140,4 +145,15 @@
     margin: auto;
     font-size: 0.9em;
 }
-
+.overlay__content_form_adresses
+{
+    width: 80%;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.overlay__content_form_radio,
+.overlay__content_form_radio 
+{
+    cursor: pointer;
+}

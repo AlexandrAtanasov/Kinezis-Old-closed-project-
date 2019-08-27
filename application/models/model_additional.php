@@ -20,7 +20,7 @@
             $pdo->query("SET CHARACTER SET 'utf8'");
             
             $result = $pdo->query("SELECT 
-                `Title`, `Article`, `Img`
+                `Title`, `Article`, `Img`, `TitleURL`
                 FROM `additional_services_list` WHERE `TitleURL` LIKE '$service' ;");
             return $result;
         }

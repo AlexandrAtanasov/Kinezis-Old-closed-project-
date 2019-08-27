@@ -33,6 +33,21 @@
                 $action_name = 'index';
             };
 
+            // $sitemap = '/.sitemap/i';
+            // if (!empty($routes[1]) && (preg_match($sitemap, $routes[1]) )) 
+            // {
+            //     echo $sitemap ;
+            //     $controller_name = 'Main';
+            //     $action_name = 'index';
+            //     // $file = __DIR__ . $sitemap;
+            //     // if (file_exists($file)) {
+            //     //     readfile($file);
+            //     //     exit;
+            //     // } else {
+            //     //     die('Error: The file '. $file .' does not exist!');
+            //     // };
+            // };
+
             // set prefixes
             $model_name = 'Model_' . $controller_name;
             $controller_name = 'Controller_' . $controller_name;
@@ -81,11 +96,6 @@
             $controller = new $controller_name;
             $action = $action_name;
             $controller->$action();
-
-            // $host = 'http://'.$_SERVER['HTTP_HOST'] . '/';
-            // header('HTTP/1.1 404 Not Found');
-            //     header('Status: 404 Not Found');
-            //     header('Location' . $host . '404');
         }
     }
 
