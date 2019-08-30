@@ -1,17 +1,18 @@
-<!-- menu box of header -->
+<!-- get lists of additional services and resovable problems  -->
 <?php
-include(__DIR__ . '/main_navigation_lists.php' );
+    include(__DIR__ . '/main_navigation_lists.php' );
 ?>
+
+<!-- print menu lists for a big screen -->
 <nav>
     <div class="scroll__menu_element">
-        
         <div class="nav_container">
+
             <ul class="nav__menu_list decoration__list_none decoration__select_none decoration__link">
             
                 <li class="nav__menu_main">
                     <span>Главная</span>
                 </li>
-
 
                 <li>
                     <span class="nav__menu_activities">
@@ -19,7 +20,6 @@ include(__DIR__ . '/main_navigation_lists.php' );
                     </span>
                     <ul class='nav__menu_drop decoration__select_none decoration__list_none'>
                         <?php
-                            // include ( __DIR__ . '/main_navigation_lists.php' );
                             foreach( $problemsList as $row )
                             {
                                 echo
@@ -40,7 +40,6 @@ include(__DIR__ . '/main_navigation_lists.php' );
                     </span>
                     <ul class='nav__menu_drop decoration__select_none decoration__list_none'>
                         <?php
-                            // include ( __DIR__ . '/main_navigation_lists.php' );
                             foreach( $additionalList as $row )
                             {
                                 echo
@@ -51,11 +50,13 @@ include(__DIR__ . '/main_navigation_lists.php' );
                                 ';
                             }
                         ?>
+
                         <li class="nav__menu_rehab">
                             <span>
                                 Реабилитационные занятия для инвалидов
                             </span>
                         </li>
+
                         <li class="nav__menu_equipment">
                             <span>
                                 Продажа тренажёров
@@ -72,11 +73,13 @@ include(__DIR__ . '/main_navigation_lists.php' );
                                 Стоимость услуг
                             </span>
                         </li>
+
                         <li class="nav__menu_priceIndividual">
                             <span>
                                 Стоимость индивидуальных занятий   
                             </span>
                         </li>
+
                         <li class="nav__menu_priceSale">
                             <span>
                                 Акции и скидки
@@ -92,26 +95,31 @@ include(__DIR__ . '/main_navigation_lists.php' );
                                 Наша команда
                             </span>
                         </li>
+
                         <li class="nav__menu_centers">
                             <span>
                                 О центрах
                             </span>
                         </li>
+
                         <li class="nav__menu_method">
                             <span>
                                 О методике
                             </span>
                         </li>
+
                         <li class="nav__menu_rules">
                             <span>
                                 Правила посещения
                             </span>
                         </li>
+
                         <li class="nav__menu_vacancy">
                             <span>
                                 Вакансии
                             </span>
                         </li>
+
                         <li class="nav__menu_organizations">
                             <span>
                                 Вышестоящие оганизации
@@ -139,7 +147,7 @@ include(__DIR__ . '/main_navigation_lists.php' );
                 </li>
 
             </ul>
-        </div>
 
+        </div>
     </div>
 </nav>

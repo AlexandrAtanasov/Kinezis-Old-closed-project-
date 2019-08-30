@@ -73,23 +73,23 @@ gulp.task('copy_index', function() {
 // concat js and css tasks
 gulp.task('concat_css', function() {
 	return gulp.src([
-					'./css/grid.css',
-					 './css/main_style.css',
-					 './css/decoration_rules.css',
-					 './css/header.css',
-					 './css/navigation.css',
-					 './css/content_activities.css',
-					 './css/content_person.css',
-					 './css/content_article.css',
-					 './css/content_contacts.css',
-					 './css/content_prices.css',
-					 './css/footer.css',
-					 './css/overlay.css',
-					 './css/scrollingElements.css',
-					 './css/slider.css',
-					 './css/carousel.css',
-					 './css/media_query.css'
-					])
+		'./css/grid.css',
+		'./css/main_style.css',
+		'./css/decoration_rules.css',
+		'./css/header.css',
+		'./css/navigation.css',
+		'./css/content_activities.css',
+		'./css/content_person.css',
+		'./css/content_article.css',
+		'./css/content_contacts.css',
+		'./css/content_prices.css',
+		'./css/footer.css',
+		'./css/overlay.css',
+		'./css/scrollingElements.css',
+		'./css/slider.css',
+		'./css/carousel.css',
+		'./css/media_query.css'
+	])
 	.pipe(concat('style.css'))
 	.pipe(autoprefixer({
     	// browsers: ['last 10 versions'],
@@ -101,24 +101,30 @@ gulp.task('concat_css', function() {
   });
 gulp.task('concat_js', function() {
 	return gulp.src([
-					'./js/menu_desktop_and_mobile_slideup.js',
-					 './js/scroll_window.js',
-					 './js/scrollTo.js',
-					 './js/overlay_callback.js',
-					 './js/overlay_menu.js',
-					 './js/overlay_callback_submit.js',
-					 './js/overlaySliderPainting.js',
-					 './js/slider.js',
-					 './js/openSlider.js',
-					//  './js/download_files.js',
-					 './js/carousel.js'
-					])
+		'./js/menu_desktop_and_mobile_slideup.js',
+		'./js/scroll_window.js',
+		'./js/scrollTo.js',
+		'./js/overlay_callback.js',
+		'./js/overlay_menu.js',
+		'./js/overlay_callback_submit.js',
+		'./js/overlaySliderPainting.js',
+		'./js/slider.js',
+		'./js/openSlider.js',
+	 // './js/download_files.js',
+		'./js/carousel.js'
+	])
 	.pipe(concat('script.js'))
 	.pipe(uglify())
 	.pipe(gulp.dest('./public/js/'))
 	
 	// .pipe(browserSync.stream());;
   });
+
+// start watching by *js and *css
+gulp.task('concat', function() {
+	gulp.watch("./js/**/*.js", gulp.series('concat_js'));
+	gulp.watch("./css/*.css", gulp.series('concat_css'));
+});
 
 // clean destination folders tasks
 gulp.task('clean_dest_img', function() {
@@ -157,10 +163,9 @@ gulp.task('watchThis', function() {
 	// gulp.watch('./dev/*.php', gulp.series('clean_dest_index', 'copy_index') );
 });
 
-
 gulp.task('default', 
 	// gulp.parallel('watchThis', 'serve'),
-	gulp.parallel('watchThis'),
+	gulp.parallel('concat'),
 	);
 
 // task for copying working files from OSP to public   

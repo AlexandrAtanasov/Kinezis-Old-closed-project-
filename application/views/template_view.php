@@ -46,11 +46,9 @@
     <!-- /Yandex.Metrika counter -->
 
 	<?php
-		include(__DIR__ . '/../../html/header.html');
-        // include(__DIR__ . '/../../html/navigation.html');
-        // include(__DIR__ . '/main_navigation_lists.php' );
+		include(__DIR__ . '/main_header.php');
 		include(__DIR__ . '/main_navigation.php');
-		include(__DIR__ . '/../../html/main__content_start.html');
+		include(__DIR__ . '/main_content_start.php');
 
 		include(__DIR__ . '/../views/' . $content_view);
 
