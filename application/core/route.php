@@ -75,7 +75,7 @@
         static function ErrorPage404()
         {
             $controller_name = 'Controller_404';
-            $action_name = 'action_' . 'index';
+            $action_name = 'action_' . '404';
             $controller_file = strtolower($controller_name) . '.php';
             $controller_path = 'application/controllers/' . $controller_file;
             include 'application/controllers/' . $controller_file;

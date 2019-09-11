@@ -74,7 +74,7 @@
                         <a href="mailto:urpn@59.rospotrebnadzor.ru"> 
                             urpn@59.rospotrebnadzor.ru
                         </a>
-                    </P>
+                    </p>
                 </span>
             </div>
         </div>

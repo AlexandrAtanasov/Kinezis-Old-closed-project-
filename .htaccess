@@ -43,8 +43,19 @@ Redirect 301 /otzyvy.html /reviews
 Redirect 301 /contact.html /contacts
 
 
+
 RedirectMatch 302 \/resolvable\/problem\/(.*)\/.*$ /resolvable/problem/$1
+RedirectMatch 302 \/resolvable\/problem\/[0-9].* /
 RedirectMatch 302 \/additional\/service\/(.*)\/.*$ /additional/service/$1
+RedirectMatch 302 \/centers\/.*$ /centers
+RedirectMatch 302 \/organizations\/.*$ /organizations
+RedirectMatch 302 \/persons\/.*$ /persons
+RedirectMatch 302 \/vacancy\/.*$ /vacancy
+RedirectMatch 302 \/rules\/.*$ /rules
+RedirectMatch 302 \/news\/.*$ /news
+RedirectMatch 302 \/reviews\/.*$ /reviews
+RedirectMatch 302 \/contacts\/.*$ /contacts
+
 RedirectMatch 302 \/personalpos\/.*$ /persons
 
 RedirectMatch 302 \/clients\.html.* /
