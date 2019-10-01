@@ -110,7 +110,6 @@ gulp.task('concat_js', function() {
 		'./js/overlaySliderPainting.js',
 		'./js/slider.js',
 		'./js/openSlider.js',
-	 // './js/download_files.js',
 		'./js/carousel.js'
 	])
 	.pipe(concat('script.js'))

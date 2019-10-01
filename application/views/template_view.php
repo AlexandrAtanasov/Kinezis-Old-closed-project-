@@ -23,6 +23,16 @@
     <script src="//code.jivosite.com/widget.js" data-jv-id="j5UxZwUNyF" async></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149278926-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-149278926-1');
+    </script>
+    <!-- /Google Analytics -->
 </head>
 <body>
 

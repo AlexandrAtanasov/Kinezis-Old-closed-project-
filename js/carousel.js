@@ -12,6 +12,7 @@ document.addEventListener(
                 go();
                 if (!(images.length == 1)) 
                 {
+                    // console.log(images);
                     var i = 0;
                     var changeBackground = setTimeout(function change() 
                         {
@@ -47,11 +48,12 @@ document.addEventListener(
         };
 
         function mobileImages(elements) {
-            var regex1 = /.*mobile_.*/gm;
+            var regex1 = /.*mobile_.*/m;
             var j = 0;
             for ( var i = 0; i < elements.length; i++ ) 
             {
-                if (regex1.exec(elements[i].innerHTML)) {
+                if (regex1.exec(elements[i].innerHTML)) 
+                {
                     images[j] = elements[i].innerHTML;
                     j++;
                 };
@@ -60,14 +62,25 @@ document.addEventListener(
         };
 
         function bigImages(elements) {
-            var regex2 = /.*big_.*/gm;
+            var regex2 = /.*big_.*/m;
             var j = 0;
             for ( var i = 0; i < elements.length; i++ ) 
             {
-                if (regex2.exec(elements[i].innerHTML)) {
+                // console.log('start ' + i + ', ' + j );
+                
+                if (regex2.exec(elements[i].innerHTML)) 
+                {
+                    // console.log('yes ' + i + ', ' + j);
                     images[j] = elements[i].innerHTML;
                     j++;
+                    continue;
                 };
+                // else 
+                // {
+                //     console.log('no ' + i + ' ' + elements[i].innerHTML);
+                // };
+                
+                // console.log('done ' + i);
             };
             return images;
         };
