@@ -17,7 +17,7 @@
                 <img src="../images/activities/activities_9.jpg">
             </div>
             <div class="content__activities_info">
-                <p>Межпозвоночная грыжа</p>
+                <p>Межпозвонковая грыжа</p>
             </div>
         </div>
         <div class="content__activities_elem">
